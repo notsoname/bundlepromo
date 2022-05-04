@@ -113,7 +113,7 @@ recomendationBtns.forEach((rec) => {
     <p class="bold text-left">В целом, важно создать несколько мест, где каждый член семьи сможет отвлечься от суеты, расслабиться в компании с приятной книгой или просто созерцая вид за окном. Такие места дают ощущение своего личного пространства, создавая неповторимую энергию дома.</p>
 </div>
 <h4 class="popup-header">Подборка подходящей техники Samsung</h4>
-<div class="popup-wrapper">
+<div class="popup-wrapper popup-wrapper-nogap">
     <div class="popup-itemCard">
         <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/fridge.png" alt="fridge">
         <div class="bold popup-itemCard-name">Паровой шкаф <br> для ухода за одеждой</div>
@@ -245,28 +245,20 @@ recomendationBtns.forEach((rec) => {
   <p class="bold">
       Индивидуальность хозяина дома можно подчеркнуть в <br> элементах интерьера. 
   </p>
-  <div class="popup-wrapper">
+  <img class="popup-img popup-img-21" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/general21.png" alt="">
       <div>
           <p class="popup-text_small popup-text_small-21">Хобби, любовь к музыкальному направлению или яркий вкус в одежде могут стать основанием выбора нейтрального основного цвета с добавлением ярких и нестандартных цветов. Причём ключевой цвет можно показать в разных плоскостях и формах: на кухонных фасадах, в обивке мебели, в декоре. Таким образом у пространства появится не только объединяющий элемент, но и ощущение причастности к создателю.</p>
       </div>
-      <div>
-          <img class="popup-img" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/general21.png" alt="">
-          <p class="popup-text_small popup-text_small-22">
-              Существуют интерьерные решения, в которых ванная комната отделяется от спальни полностью стеклянной перегородкой. Благодаря этому свет проникает в ванную. Кроме того, такой подход отражает яркую и свободную составляющую в характере владельца. При желании перегородку можно закрыть шторой, но суть остаётся прежней.
-          </p>
+      <div class="popup-wrapper popup-wrapper2">
+        <img class="popup-img popup-img-22" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/general22.png" alt="">
+        <p class="popup-text_small popup-text_small-22">
+            Существуют интерьерные решения, в которых ванная комната отделяется от спальни полностью стеклянной перегородкой. Благодаря этому свет проникает в ванную. Кроме того, такой подход отражает яркую и свободную составляющую в характере владельца. При желании перегородку можно закрыть шторой, но суть остаётся прежней.
+        </p>
       </div>
-  </div>
-  <div class="popup-wrapper">
-      <div>
-          <img class="popup-img popup-img-22" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/general22.png" alt="">
-      </div>
-      <div>
-          <p class="popup-text popup-text_small-23">Пространство для жизни должно быть максимально комфортным для вас, без оглядки на тренды или рекомендации инфлюенсеров.</p>
-      </div>
-  </div>
-  <img class="popup-img popup-img-23" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/general23.png" alt="">
+  <img class="popup-img" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/general23.png" alt="">
+  <p class="popup-text bold">Пространство для жизни должно быть максимально комфортным для вас, без оглядки на тренды или рекомендации инфлюенсеров.</p>
   <h4 class="popup-header">Подборка подходящей техники Samsung</h4>
-  <div class="popup-wrapper">
+  <div class="popup-wrapper popup-wrapper-nogap">
       <div class="popup-itemCard">
           <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/serif.png" alt="fridge">
           <div class="bold popup-itemCard-name">The Serif 4K <br> Smart TV</div>
@@ -360,6 +352,7 @@ recomendationBtns.forEach((rec) => {
     } else if (data === "kitchen") {
       popup.classList.remove("none");
       popup.innerHTML = `
+      <div class="desktop">
       <span>
       <img class="popup-close" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/close.png" alt="">
   </span>
@@ -431,69 +424,189 @@ recomendationBtns.forEach((rec) => {
               <a href="https://www.samsung.com/kz_ru/refrigerators/one-door/323l-white-rz32t7435ap-wt/" class="btn btn-link btn-link-underline">Узнать больше</a>
           </div>
       </div>
+    </div>
   </div>
+
+  <div class="mobile">
+  <span>
+  <img class="popup-close" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/close.png" alt="">
+</span>
+<h4 class="popup-header">Кухня</h4>
+  <p class="bold popup-text bold popup-text-4">Если вы хотите сделать кухню в синем цвете, следует быть осторожнее, чтобы не допустить тяжеловесности пространства. В случае, когда кухня совмещена с гостиной, можно выбрать решение с сочетанием синего цвета с белым. Кроме того, для приятных цветовых акцентов добавьте латунные золотые детали в ручках и светильниках.</p>
+  <img class="popup-img popup-img-42" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/kitchen12.png" alt="">
+  <p class="popup-text_small">
+    Если в вашей семье много детей и необходимо продумать пространство для совместных завтраков, то можно вынести отдельно остров, как показано на примере. Там же можно разместить мойку и посудомоечную машину для комфортного общения с семьёй в процессе приготовления ужина. <br><br>
+    Встройте в кухонный гарнитур духовку Samsung, в которой можно готовить два блюда одновременно без смешения запахов — это особенно удобно для больших семей.
+</p>
+<img class="popup-img popup-img-43" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/kitchen13.png" alt="">
+<p class="popup-text_small popup-text_small-43">Два холодильника не будут бросаться в глаза, если спрятать их за панелями, а в углу можно сделать скрытую полку с выдвижной тумбочкой — в ней легко поместится мелкая бытовая техника. </p>
+<h4 class="popup-header">Подборка подходящей техники Samsung</h4>
+<div class="popup-wrapper popup-wrapper-nogap">
+  <div class="popup-itemCard">
+      <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/oven.png" alt="fridge">
+      <div class="bold popup-itemCard-name">Духовой Шкаф NV7000N <br> Dual Cook Flex, 75 л</div>
+      <div class="popup-itemCard-model">NV75R5641RB/WT</div>
+      <div class="popup-itemCard-color"><b>Цвет</b>: чёрный</div>
+      <button class="color-wrapper">
+        <div class="color-inner color-black"></div>
+      </button>
+      <div class="popup-itemCard-price">499 990 ₸</div>
+      <div class="buttons buttons-column">
+          <button data-id="NV75R5641RB/WT" class="btn btn-black popup-itemCard-buy">Добавить в корзину</button>
+          <a href="https://www.samsung.com/kz_ru/cooking-appliances/ovens/electric-oven-nv75r5641rb-wt/" class="btn btn-link btn-link-underline">Узнать больше</a>
+      </div>
+  </div>
+  <div class="popup-itemCard">
+      <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/microwave.png" alt="generalItem2">
+      <div class="bold popup-itemCard-name">Микроволновая печь с <br> Грилем</div>
+      <div class="popup-itemCard-model">VS20A95973B/EV</div>
+      <div class="popup-itemCard-color"><b>Цвет</b>: мята</div>
+      <button class="color-wrapper">
+        <div class="color-inner color-myta"></div>
+      </button>
+      <div class="popup-itemCard-price">99 990 ₸</div>
+      <div class="buttons buttons-column">
+          <button data-id="VS20A95973B/EV" class="btn btn-black popup-itemCard-buy">Добавить в корзину</button>
+          <a href="https://www.samsung.com/kz_ru/vacuum-cleaners/stick/vs9500al-vc-with-all-in-one-clean-station-blue-vs20a95973b-ev/" class="btn btn-link btn-link-underline">Узнать больше</a>
+      </div>
+  </div>
+  <div class="popup-itemCard">
+      <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/fridge2.png" alt="generalItem2">
+      <div class="bold popup-itemCard-name">Однодверный <br> морозильник BESPOKE</div>
+      <div class="popup-itemCard-model">RZ32T7435AP/WT</div>
+      <div class="popup-itemCard-color"><b>Цвет</b>: Белый</div>
+      <button class="color-wrapper">
+        <div class="color-inner color-white"></div>
+      </button>
+      <div class="popup-itemCard-price">544 990 ₸</div>
+      <div class="buttons buttons-column">
+          <button data-id="RZ32T7435AP/WT" class="btn btn-black popup-itemCard-buy">Добавить в корзину</button>
+          <a href="https://www.samsung.com/kz_ru/refrigerators/one-door/323l-white-rz32t7435ap-wt/" class="btn btn-link btn-link-underline">Узнать больше</a>
+      </div>
+  </div>
+</div>
+</div>
             `;
     } else if (data == "kid") {
       popup.classList.remove("none");
       popup.innerHTML = `
-            <span>
-            <img class="popup-close" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/close.png" alt="">
-        </span>
-        <h4 class="popup-header">Детская</h4>
-        <div class="popup-wrapper">
-            <div>
-                <p class="bold popup-text-1">Интерьер детской может быть частью общего стиля дома. При этом безусловно важно прислушаться к пожеланиям самого юнного хозяина комнаты. </p>
-                <p class="popup-text_small popup-text_small-1">Основные цвета в детской можно сделать довольно сдержанными, чтобы она росла вместе с ребёнком. Цветные игрушки станут акцентами и зададут настроение комнате. По мере взросления игрушки можно убрать, и спальня станет аскетичной. В узких комнатах добавьте зеркало для увеличения объёма, а перед телевизором Samsung разместите лежачий подиум, на котором ребёнок будет играть с друзьями или просто с комфортом смотреть мультфильмы.</p>
-            </div>
-            <div>
-                <img class="popup-img" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/kid1.png" alt="">
-                <p class="popup-text_small popup-text_small-51">Меловая чёрная стена станет отличным решением для маленьких любителей рисовать и писать.</p>
-            </div>
-        </div>
-        <div class="popup-wrapper">
-            <div>
-                <img class="popup-img popup-img-51" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/kid2.png" alt="">
-            </div>
-            <div>
-                <img class="popup-img popup-img-2" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/kid3.png" alt="">
-                <p class="popup-text_small">
-                    Чтобы не занимать активное пространство детской, все места для хранения можно интегрировать в два шкафа с полками, которые станут практически незаметными на фоне всей детской.
-                </p>
-            </div>
-        </div>
-        <h4 class="popup-header">Подборка подходящей техники Samsung</h4>
-        <div class="popup-wrapper">
-            <div class="popup-itemCard">
-                <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/wind.png" alt="fridge">
-                <div class="bold popup-itemCard-name">Cплит-система с <br> технологией WindFree™</div>
-                <div class="popup-itemCard-model">AR12AXAAAWKNER</div>
-                <div class="popup-itemCard-price">494 990  ₸</div>
-                <div class="buttons buttons-column">
-                    <button data-id="AR12AXAAAWKNER" class="btn btn-black popup-itemCard-buy">Добавить в корзину</button>
-                    <a href="https://www.samsung.com/kz_ru/air-conditioners/wall-mount/ar9500t-wind-free-ar12axaaawkner/" class="btn btn-link btn-link-underline">Узнать больше</a>
-                </div>
-            </div>
-            <div class="popup-itemCard">
-                <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/air.png" alt="generalItem2">
-                <div class="bold popup-itemCard-name">Очиститель <br> воздуха</div>
-                <div class="popup-itemCard-model">AX60T5080WD/ER</div>
-                <div class="popup-itemCard-price">209 990 ₸</div>
-                <div class="buttons buttons-column">
-                    <button data-id="AX60T5080WD/ER" class="btn btn-black popup-itemCard-buy">Добавить в корзину</button>
-                    <a href="https://www.samsung.com/kz_ru/air-care/air-purifier/ax5500k-air-purifier-with-3-way-air-flow/" class="btn btn-link btn-link-underline">Узнать больше</a>
-                </div>
-            </div>
-            <div class="popup-itemCard">
-                <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/freestyle.png" alt="generalItem2">
-                <div class="bold popup-itemCard-name">Портативный проектор <br> The Freestyle</div>
-                <div class="popup-itemCard-model">SP-LSP3BLAXCE</div>
-                <div class="popup-itemCard-price">569 990 ₸</div>
-                <div class="buttons buttons-column">
-                    <button data-id="SP-LSP3BLAXCE" class="btn btn-black popup-itemCard-buy">Добавить в корзину</button>
-                    <a href="https://www.samsung.com/kz_ru/projectors/the-freestyle/lsp3b-the-freestyle-sp-lsp3blaxce/" class="btn btn-link btn-link-underline">Узнать больше</a>
-                </div>
-            </div>
-        </div>
+           <div class="desktop">
+           <span>
+           <img class="popup-close" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/close.png" alt="">
+       </span>
+       <h4 class="popup-header">Детская</h4>
+       <div class="popup-wrapper">
+           <div>
+               <p class="bold popup-text-1">Интерьер детской может быть частью общего стиля дома. При этом безусловно важно прислушаться к пожеланиям самого юнного хозяина комнаты. </p>
+               <p class="popup-text_small popup-text_small-1">Основные цвета в детской можно сделать довольно сдержанными, чтобы она росла вместе с ребёнком. Цветные игрушки станут акцентами и зададут настроение комнате. По мере взросления игрушки можно убрать, и спальня станет аскетичной. В узких комнатах добавьте зеркало для увеличения объёма, а перед телевизором Samsung разместите лежачий подиум, на котором ребёнок будет играть с друзьями или просто с комфортом смотреть мультфильмы.</p>
+           </div>
+           <div>
+               <img class="popup-img" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/kid1.png" alt="">
+               <p class="popup-text_small popup-text_small-51">Меловая чёрная стена станет отличным решением для маленьких любителей рисовать и писать.</p>
+           </div>
+       </div>
+       <div class="popup-wrapper">
+           <div>
+               <img class="popup-img popup-img-51" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/kid2.png" alt="">
+           </div>
+           <div>
+               <img class="popup-img popup-img-2" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/kid3.png" alt="">
+               <p class="popup-text_small">
+                   Чтобы не занимать активное пространство детской, все места для хранения можно интегрировать в два шкафа с полками, которые станут практически незаметными на фоне всей детской.
+               </p>
+           </div>
+       </div>
+       <h4 class="popup-header">Подборка подходящей техники Samsung</h4>
+       <div class="popup-wrapper">
+           <div class="popup-itemCard">
+               <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/wind.png" alt="fridge">
+               <div class="bold popup-itemCard-name">Cплит-система с <br> технологией WindFree™</div>
+               <div class="popup-itemCard-model">AR12AXAAAWKNER</div>
+               <div class="popup-itemCard-price">494 990  ₸</div>
+               <div class="buttons buttons-column">
+                   <button data-id="AR12AXAAAWKNER" class="btn btn-black popup-itemCard-buy">Добавить в корзину</button>
+                   <a href="https://www.samsung.com/kz_ru/air-conditioners/wall-mount/ar9500t-wind-free-ar12axaaawkner/" class="btn btn-link btn-link-underline">Узнать больше</a>
+               </div>
+           </div>
+           <div class="popup-itemCard">
+               <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/air.png" alt="generalItem2">
+               <div class="bold popup-itemCard-name">Очиститель <br> воздуха</div>
+               <div class="popup-itemCard-model">AX60T5080WD/ER</div>
+               <div class="popup-itemCard-price">209 990 ₸</div>
+               <div class="buttons buttons-column">
+                   <button data-id="AX60T5080WD/ER" class="btn btn-black popup-itemCard-buy">Добавить в корзину</button>
+                   <a href="https://www.samsung.com/kz_ru/air-care/air-purifier/ax5500k-air-purifier-with-3-way-air-flow/" class="btn btn-link btn-link-underline">Узнать больше</a>
+               </div>
+           </div>
+           <div class="popup-itemCard">
+               <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/freestyle.png" alt="generalItem2">
+               <div class="bold popup-itemCard-name">Портативный проектор <br> The Freestyle</div>
+               <div class="popup-itemCard-model">SP-LSP3BLAXCE</div>
+               <div class="popup-itemCard-price">569 990 ₸</div>
+               <div class="buttons buttons-column">
+                   <button data-id="SP-LSP3BLAXCE" class="btn btn-black popup-itemCard-buy">Добавить в корзину</button>
+                   <a href="https://www.samsung.com/kz_ru/projectors/the-freestyle/lsp3b-the-freestyle-sp-lsp3blaxce/" class="btn btn-link btn-link-underline">Узнать больше</a>
+               </div>
+           </div>
+       </div>
+           </div>
+
+           <div class="mobile">
+           <span>
+           <img class="popup-close" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/close.png" alt="">
+       </span>
+       <h4 class="popup-header">Детская</h4>
+       <p class="bold popup-text">Интерьер детской может быть частью общего стиля дома. При этом безусловно важно прислушаться к пожеланиям самого юнного хозяина комнаты. </p>
+       <img class="popup-img" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/kid1.png" alt="">
+       <p class="popup-text_small">Основные цвета в детской можно сделать довольно сдержанными, чтобы она росла вместе с ребёнком. Цветные игрушки станут акцентами и зададут настроение комнате. По мере взросления игрушки можно убрать, и спальня станет аскетичной. В узких комнатах добавьте зеркало для увеличения объёма, а перед телевизором Samsung разместите лежачий подиум, на котором ребёнок будет играть с друзьями или просто с комфортом смотреть мультфильмы.</p>
+       <div class="popup-wrapper">
+           <div>
+               
+           </div>
+           <p class="popup-text_small popup-text_small-51">Меловая чёрная стена станет отличным решением для маленьких любителей рисовать и писать.</p>
+       </div>
+       <div class="popup-wrapper">
+           <div>
+               <img class="popup-img popup-img-2" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/kid3.png" alt="">
+               <p class="popup-text_small">
+                   Чтобы не занимать активное пространство детской, все места для хранения можно интегрировать в два шкафа с полками, которые станут практически незаметными на фоне всей детской.
+               </p>
+           </div>
+       </div>
+       <h4 class="popup-header">Подборка подходящей техники Samsung</h4>
+       <div class="popup-wrapper popup-wrapper-nogap">
+           <div class="popup-itemCard">
+               <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/wind.png" alt="fridge">
+               <div class="bold popup-itemCard-name">Cплит-система с <br> технологией WindFree™</div>
+               <div class="popup-itemCard-model">AR12AXAAAWKNER</div>
+               <div class="popup-itemCard-price">494 990  ₸</div>
+               <div class="buttons buttons-column">
+                   <button data-id="AR12AXAAAWKNER" class="btn btn-black popup-itemCard-buy">Добавить в корзину</button>
+                   <a href="https://www.samsung.com/kz_ru/air-conditioners/wall-mount/ar9500t-wind-free-ar12axaaawkner/" class="btn btn-link btn-link-underline">Узнать больше</a>
+               </div>
+           </div>
+           <div class="popup-itemCard">
+               <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/air.png" alt="generalItem2">
+               <div class="bold popup-itemCard-name">Очиститель <br> воздуха</div>
+               <div class="popup-itemCard-model">AX60T5080WD/ER</div>
+               <div class="popup-itemCard-price">209 990 ₸</div>
+               <div class="buttons buttons-column">
+                   <button data-id="AX60T5080WD/ER" class="btn btn-black popup-itemCard-buy">Добавить в корзину</button>
+                   <a href="https://www.samsung.com/kz_ru/air-care/air-purifier/ax5500k-air-purifier-with-3-way-air-flow/" class="btn btn-link btn-link-underline">Узнать больше</a>
+               </div>
+           </div>
+           <div class="popup-itemCard">
+               <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/freestyle.png" alt="generalItem2">
+               <div class="bold popup-itemCard-name">Портативный проектор <br> The Freestyle</div>
+               <div class="popup-itemCard-model">SP-LSP3BLAXCE</div>
+               <div class="popup-itemCard-price">569 990 ₸</div>
+               <div class="buttons buttons-column">
+                   <button data-id="SP-LSP3BLAXCE" class="btn btn-black popup-itemCard-buy">Добавить в корзину</button>
+                   <a href="https://www.samsung.com/kz_ru/projectors/the-freestyle/lsp3b-the-freestyle-sp-lsp3blaxce/" class="btn btn-link btn-link-underline">Узнать больше</a>
+               </div>
+           </div>
+       </div>
+           </div>
             `;
     }
   });

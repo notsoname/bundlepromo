@@ -116,9 +116,14 @@
     &-wrapper {
       flex-wrap: wrap;
       gap: vw(12, $unitPxVw);
+      &-nogap {
+        gap: unset;
+        align-items: center;
+      }
     }
-    &-wrapper {
+    &-wrapper2 {
       gap: unset;
+      flex-wrap: unset;
       align-items: center;
     }
     &-header1 {
@@ -146,12 +151,52 @@
           margin-top: 0 !important;
           width: vw(120, $unitPxVw);
         }
+        &-21 {
+          margin-left: 0;
+          width: unset;
+        }
+        &-22 {
+          margin-left: 0;
+        }
+        &-43 {
+          margin-left: vw(24, $unitPxVw);
+        }
+        &-51 {
+          width: unset;
+        }
+      }
+      &-4 {
+        margin-top: vw(16, $unitPxVw) !important;
+        width: unset;
       }
     }
     &-img {
       &-2 {
         width: vw(148, $unitPxVw);
         margin-top: vw(8, $unitPxVw);
+      }
+      &-21 {
+        margin-top: vw(16, $unitPxVw);
+      }
+      &-22 {
+        position: unset;
+        top: 0;
+        left: 0;
+        width: vw(200, $unitPxVw);
+      }
+      &-42 {
+        position: unset;
+        top: unset;
+        left: unset;
+        z-index: 100;
+        width: 100%;
+        margin-top: vw(16, $unitPxVw);
+      }
+      &-43 {
+        margin-top: vw(16, $unitPxVw);
+        width: 100%;
+        object-fit: contain;
+        height: 100%;
       }
     }
     &-itemCard {
