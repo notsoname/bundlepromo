@@ -1,0 +1,179 @@
+@media (max-width: $mobileWidth) {
+  $unitPxVw: 3.6;
+  h1 {
+    font-size: vw(30, $unitPxVw);
+  }
+
+  h2 {
+    font-size: vw(26, $unitPxVw);
+  }
+
+  h3 {
+    font-size: vw(16, $unitPxVw);
+  }
+
+  h4 {
+    font-size: vw(22, $unitPxVw);
+  }
+
+  h5 {
+    font-size: vw(14, $unitPxVw);
+  }
+
+  h6 {
+    font-size: vw(14, $unitPxVw);
+  }
+
+  .section {
+    padding-top: vw(16, $unitPxVw);
+    &-main {
+      display: block;
+      min-height:vw(540, $unitPxVw) ;
+      text-align: center;
+      background-image: url('https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/bgmob.png');
+    }
+    &-communication {
+      background-image: url('https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/bgmob.png');
+      height: unset;
+    }
+    &-communication, &-connect {
+      display: none;
+    }
+    &-connect_mob {
+      display: flex;
+      min-height: vw(1212, $unitPxVw);
+      background-image: url('https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/communicationBGmob.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: unset;
+      padding-bottom: vw(71, $unitPxVw);
+    }
+  }
+  .share {
+    &-card {
+      width: vw(312, $unitPxVw);
+      height: vw(312, $unitPxVw);
+    }
+  }
+  .solution {
+    &-card {
+      width: vw(312, $unitPxVw);
+      height: vw(654, $unitPxVw);
+    }
+    &-btns {
+      padding: vw(24, $unitPxVw);
+    }
+  }
+  .communication {
+    &-card {
+      width: vw(148, $unitPxVw);
+      height: vw(148, $unitPxVw);
+    }
+    &-text {
+      margin-bottom: unset;
+    }
+  }
+  .connect {
+    &-header {
+      font-size: vw(14, $unitPxVw);
+      margin-top: vw(339, $unitPxVw);
+    }
+  }
+  .connectMob {
+    &-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: vw(16, $unitPxVw);
+    }
+  }
+  .designer{
+    &-card {
+      background-image: url('../assets/designMob.png');
+      width: vw(312, $unitPxVw);
+      height: vw(451, $unitPxVw);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: vw(16, $unitPxVw);
+      &-text {
+        line-height: unset;
+        font-size: vw(12, $unitPxVw);
+      }
+    }
+  }
+  .selectorRecomendation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: vw(16, $unitPxVw) !important;
+  }
+  .general-wrapper {
+    justify-content: center;
+  }
+  .popup  {
+    width: vw(312, $unitPxVw) !important;
+    &-wrapper {
+      flex-wrap: wrap;
+      gap: vw(12, $unitPxVw);
+    }
+    &-wrapper {
+      gap: unset;
+      align-items: center;
+    }
+    &-header1 {
+      font-size: vw(16, $unitPxVw);
+      width: vw(100, $unitPxVw);
+    }
+    &-header {
+      font-size: vw(16, $unitPxVw);
+    }
+    &-parent {
+      position: relative;
+    }
+    &-text{
+      &-1 {
+        margin-left: vw(16, $unitPxVw);
+      }
+      &-1mob {
+        margin-left: vw(48, $unitPxVw);
+      }
+      &_small {
+        &-2 {
+          position: absolute;
+          top: vw(-201, $unitPxVw);
+          left: vw(160, $unitPxVw);
+          margin-top: 0 !important;
+          width: vw(120, $unitPxVw);
+        }
+      }
+    }
+    &-img {
+      &-2 {
+        width: vw(148, $unitPxVw);
+        margin-top: vw(8, $unitPxVw);
+      }
+    }
+    &-itemCard {
+      width: vw(132, $unitPxVw);
+      &-name {
+        font-size: vw(12, $unitPxVw);
+      }
+      &-model {
+        font-size: vw(12, $unitPxVw);
+      }
+      &-color {
+        font-size: vw(12, $unitPxVw);
+      }
+      &price {
+        font-size: vw(18, $unitPxVw);
+      }
+    }
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}

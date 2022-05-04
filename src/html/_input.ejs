@@ -1,0 +1,54 @@
+<%
+const { type,name, label, placeholder, items, note, counter, value, t } = params;
+
+        switch(type){
+case "selector": %>
+<div class="input-row input-<%- type %>">
+    <label for="form-<%- name %>"><%- t(label) %></label>
+    <div class="input-selector">
+        <%- items.map(item => `<button class="item" data-value="${item.key}">${t(item.label)}</button>`).join("\n") %>
+    </div>
+    <input autocomplete="false" type="hidden" name="<%- name %>">
+</div>
+<%
+    break;
+case "tel": %>
+<div class="input-row input-<%- type %>">
+    <label for="form-<%- name %>">
+        <input id="form-<%- name %>" autocomplete="off" placeholder=" " type="tel" name="<%- name %>">
+        <span class="label"><%- t(label) %></span>
+    </label>
+    <div class="message-error error"></div>
+</div>
+<%
+    break;
+case "textarea": %>
+<div class="input-row input-<%- type %>">
+    <textarea id="form-<%= name %>" resize="false" placeholder="<%- t(label) %>" name="<%- name %>"></textarea>
+    <%- counter ? '<div class="text-counter text-right"></div>' : ''%>
+    <div class="message-error error"></div>
+</div>
+<%
+    break;
+case "checkbox": %>
+<div class="input-row input-<%- type %>">
+    <input id="form-<%= name %>" autocomplete="off" type="<%- type %>" name="<%- name %>" placeholder=" "><label for="form-<%- name %>"><%- t(label) %></label>
+    <div class="message-error error"></div>
+</div>
+<%
+    break;
+case "hidden": %>
+<input id="form-<%= name %>" type="<%- type %>" name="<%- name %>" value="<%- value %>">
+<%
+    break;
+default: %>
+<div class="input-row input-<%- type %>">
+    <label for="form-<%- name %>">
+        <input id="form-<%= name %>" autocomplete="off" type="<%- type %>" name="<%- name %>" placeholder=" ">
+        <span class="label"><%- t(label) %></span>
+    </label>
+    <div class="message-error error"></div>
+</div>
+<%
+}
+%>

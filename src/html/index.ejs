@@ -1,0 +1,569 @@
+<%
+const {language, appId, routeData, page} = htmlWebpackPlugin.options;
+let {imageRoot, contentRoot, omniBase, baseUrl, apiUrl} = routeData;
+
+imageRoot = imageRoot.replace('{locale}', `${page}_${language}`);
+contentRoot = contentRoot.replace('{locale}', `${page}_${language}`);
+omniBase = omniBase.replace('{locale}', `${page}_${language}`);
+baseUrl = baseUrl.replace('{locale}', `${page}_${language}`);
+
+
+imageRoot = imageRoot.replace('{appId}', appId);
+contentRoot = contentRoot.replace('{appId}', appId);
+omniBase = omniBase.replace('{appId}', appId);
+baseUrl = baseUrl.replace('{appId}', appId);
+
+const omniType = 'microsite';
+const translation = require(`../../data/translations/locale-${page}-${language}`);
+
+const t = (str) => (translation[str] ? translation[str] : str);
+
+const _faq_item = require('./_faq_item.ejs');
+const _popup = require('./_popup.ejs');
+const input = require('./_input.ejs');
+const formFields = require("../js/formFields");
+const _youtube = require('./_youtube.ejs');
+%>
+
+<!DOCTYPE html>
+<html lang="<%- language %>">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <link rel="stylesheet"
+          href="https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-base.min.b2b46ed65d46ffd78b7dd408f6f1ed36.css"/>
+</head>
+<body>
+<%
+    //Duplicate translation strings which used in js scripts
+%>
+<script>
+    var seceTranslationStrings = {
+        'POPUP_SUCCESS_TITLE': "<%- t('POPUP_SUCCESS_TITLE') %>",
+        'POPUP_SUCCESS_TEXT': "<%- t('POPUP_SUCCESS_TEXT') %>",
+        'POPUP_ERROR_TITLE': "<%- t('POPUP_ERROR_TITLE') %>",
+        'BT_SEND': "<%- t('BT_SEND') %>",
+        'POPUP_ERROR_TEXT': "<%- t('POPUP_ERROR_TEXT') %>",
+        'FORM_INPUT_ERROR_REQUIRED': "<%- t('FORM_INPUT_ERROR_REQUIRED') %>",
+        'FORM_INPUT_AGREEMENT_ERROR': "<%- t('FORM_INPUT_AGREEMENT_ERROR') %>",
+        'POPUP_ERROR_SERIAL_TEXT': "<%- t('POPUP_ERROR_SERIAL_TEXT') %>",
+        'FORM_KEY': "<%- t('FORM_KEY') %>",
+        'FORM_INPUT_PHONE_FORMAT_MASK': "<%- t('FORM_INPUT_PHONE_FORMAT_MASK') %>",
+        'FORM_INPUT_PHONE_FORMAT_PATTERN': "<%- t('FORM_INPUT_PHONE_FORMAT_PATTERN') %>",
+        'POPUP_SUCCESS_AFTER_TITLE': "<%- t('POPUP_SUCCESS_AFTER_TITLE') %>",
+        'POPUP_SUCCESS_AFTER_TEXT': "<%- t('POPUP_SUCCESS_AFTER_TEXT') %>",
+    };
+    window.pageCountryId = "<%- page %>";
+    window.seceTranslationStrings = seceTranslationStrings;
+    window.seceSubmitUrl = "//api.sece.kz";
+</script>
+<div class="sece-<%- appId %>-wrap sece-language-<%- language %>" data-page="<%- page %>"
+     data-language="<%- language %>"
+     data-base-url="<%- baseUrl %>" data-omni-base="<%- omniBase %>" data-assets-image="<%- imageRoot %>"
+     data-assets-content="<%- contentRoot %>">
+
+    <div id="page-wrapper">
+        <section class="section section-main">
+            <div class="wrapper">
+              <div class="col col-6">
+                <div class="text-wrap text-padded">
+                  <h1><%- t("mainHeader") %></h1>
+                  <p>
+                    <%- t("mainSubheader1") %>
+                  </p>
+                  <div class="buttons">
+                    <a href="#more" class="btn btn-black"><%- t("mainMore") %></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section class="section" id="more">
+            <div class="wrapper wrapper-center">
+              <div class="col col-4">
+                <div class="text-wrap text-center">
+                  <h2><%- t("designerHeaer") %> </h2>
+                </div>
+              </div>
+              <div class="col col-10">
+                <div class="text-wrap text-padded">
+                  <div class="designer-card">
+                      <h4><%- t("designerCardHeader") %></h4>
+                      <p class="designer-card-text"><%- t("designerCardText") %></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section class="section section-share">
+            <div class="wrapper wrapper-center">
+              <div class="col col-8">
+                <div class="text-wrap text-center">
+                  <h2><%- t("shareHeader") %></h2>
+                  <p><%- t("shareSubheader") %></p>
+                  <div class="buttons buttons-center selectorRecomendation">
+                    <button
+                      data-room="general"
+                      class="btn btn-encased btn-encased-active"
+                    >
+                      <%- t("shareGeneral") %>
+                    </button>
+                    <button
+                      data-room="kitchen"
+                      class="btn btn-encased"
+                    >
+                      <%- t("shareKitchen") %>
+                    </button>
+                    <button data-room="livingroom" class="btn btn-encased">
+                      <%- t("shareLivingroom") %>
+                    </button>
+                    <button data-room="kidrom" class="btn btn-encased">
+                      <%- t("shareBathroom") %>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-break"></div>
+              <div class="general-wrapper">
+                  <div class="share-card">
+                      <img src="<%= imageRoot %>/general1.png" alt="general">
+                      <p class="bold"><%- t("shareGeneral1") %> </p>
+                      <div class="buttons">
+                          <button data-rec="general1" class="btn btn-black recomendation"><%- t("shareRead") %> </button>
+                      </div>
+                  </div>
+                  <div class="share-card">
+                      <img src="<%= imageRoot %>/general2.png" alt="general">
+                      <p class="bold"><%- t("shareGeneral2") %> </p>
+                      <div class="buttons">
+                          <button data-rec="general2" class="btn btn-black recomendation"><%- t("shareRead") %> </button>
+                      </div>
+                  </div>
+              </div>
+              <div class="kitchen-wrapper none">
+                  <div class="share-card">
+                      <img src="<%= imageRoot %>/kitchencard.png" alt="general">
+                      <p class="bold"><%- t("shareKitchen") %> </p>
+                      <div class="buttons">
+                          <button data-rec="kitchen" class="btn btn-black recomendation"><%- t("shareRead") %> </button>
+                      </div>
+                  </div>
+              </div>
+              <div class="living-wrapper none">
+                  <div class="share-card">
+                      <img src="<%= imageRoot %>/livingcard.png" alt="general">
+                      <p class="bold"><%- t("shareLivingroom") %> </p>
+                      <div class="buttons">
+                          <button data-rec="living" class="btn btn-black recomendation"><%- t("shareRead") %> </button>
+                      </div>
+                  </div>
+              </div>
+              <div class="kid-wrapper none">
+                  <div class="share-card">
+                      <img src="<%= imageRoot %>/kidcard.png" alt="general">
+                      <p class="bold"><%- t("shareBathroom") %> </p>
+                      <div class="buttons">
+                          <button data-rec="kid" class="btn btn-black recomendation"><%- t("shareRead") %> </button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-break"></div>
+              <div class="popup ">
+                <div class="mobile">
+                  <span>
+                  <img class="popup-close" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/close.png" alt="">
+              </span>
+              <h4 class="popup-header">Отражение хобби</h4>
+              <p class="bold">
+                  Индивидуальность хозяина дома можно подчеркнуть в <br> элементах интерьера. 
+              </p>
+              <div class="popup-wrapper">
+                  <div>
+                      <p class="popup-text_small popup-text_small-21">Хобби, любовь к музыкальному направлению или яркий вкус в одежде могут стать основанием выбора нейтрального основного цвета с добавлением ярких и нестандартных цветов. Причём ключевой цвет можно показать в разных плоскостях и формах: на кухонных фасадах, в обивке мебели, в декоре. Таким образом у пространства появится не только объединяющий элемент, но и ощущение причастности к создателю.</p>
+                  </div>
+                  <div>
+                      <img class="popup-img" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/general21.png" alt="">
+                      <p class="popup-text_small popup-text_small-22">
+                          Существуют интерьерные решения, в которых ванная комната отделяется от спальни полностью стеклянной перегородкой. Благодаря этому свет проникает в ванную. Кроме того, такой подход отражает яркую и свободную составляющую в характере владельца. При желании перегородку можно закрыть шторой, но суть остаётся прежней.
+                      </p>
+                  </div>
+              </div>
+              <div class="popup-wrapper">
+                  <div>
+                      <img class="popup-img popup-img-22" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/general22.png" alt="">
+                  </div>
+                  <div>
+                      <p class="popup-text popup-text_small-23">Пространство для жизни должно быть максимально комфортным для вас, без оглядки на тренды или рекомендации инфлюенсеров.</p>
+                  </div>
+              </div>
+              <img class="popup-img popup-img-23" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/general23.png" alt="">
+              <h4 class="popup-header">Подборка подходящей техники Samsung</h4>
+              <div class="popup-wrapper">
+                  <div class="popup-itemCard">
+                      <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/serif.png" alt="fridge">
+                      <div class="bold popup-itemCard-name">The Serif 4K <br> Smart TV</div>
+                      <div class="popup-itemCard-model">QE55LS01TAUXRU</div>
+                      <div class="popup-itemCard-color"><b>Цвет</b>: белый</div>
+                      <button class="color-wrapper">
+                        <div class="color-inner color-white"></div>
+                      </button>
+                      <div class="popup-itemCard-price">499 990 ₸</div>
+                      <div class="buttons buttons-column">
+                          <button data-id="QE55LS01TAUXRU" class="btn btn-black popup-itemCard-buy">Добавить в корзину</button>
+                          <a href="https://www.samsung.com/kz_ru/lifestyle-tvs/the-serif/the-serif-55-inch-4k-smart-tv-ls01t-cloud-white-qe55ls01tauxru/" class="btn btn-link btn-link-underline">Узнать больше</a>
+                      </div>
+                  </div>
+                  <div class="popup-itemCard">
+                      <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/jetone.png" alt="generalItem2">
+                      <div class="bold popup-itemCard-name">BESPOKE Jet One, <br> Беспроводной пылесос</div>
+                      <div class="popup-itemCard-model">VS20A95973B/EV</div>
+                      <div class="popup-itemCard-color"><b>Цвет</b>: темно-синий</div>
+                      <button class="color-wrapper">
+                        <div class="color-inner color-darkblue"></div>
+                      </button>
+                      <div class="popup-itemCard-price">549 990 ₸</div>
+                      <div class="buttons buttons-column">
+                          <button data-id="VS20A95973B/EV" class="btn btn-black popup-itemCard-buy">Добавить в корзину</button>
+                          <a href="https://www.samsung.com/kz_ru/vacuum-cleaners/stick/vs9500al-vc-with-all-in-one-clean-station-blue-vs20a95973b-ev/" class="btn btn-link btn-link-underline">Узнать больше</a>
+                      </div>
+                  </div>
+                  <div class="popup-itemCard">
+                      <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/fridgeBes.png" alt="generalItem2">
+                      <div class="bold popup-itemCard-name">Холодильник BESPOKE <br> с нижней морозильной камерой</div>
+                      <div class="popup-itemCard-model">RB38A7B62AP/WT</div>
+                      <div class="popup-itemCard-color"><b>Цвет</b>: Белый</div>
+                      <button class="color-wrapper">
+                        <div class="color-inner color-white"></div>
+                      </button>
+                      <div class="popup-itemCard-price">529 990 ₸</div>
+                      <div class="buttons buttons-column">
+                          <button data-id="RB38A7B62AP/WT" class="btn btn-black popup-itemCard-buy">Добавить в корзину</button>
+                          <a href="https://www.samsung.com/kz_ru/refrigerators/bottom-mount-freezer/rb7300t-385l-white-rb38a7b62ap-wt/" class="btn btn-link btn-link-underline">Узнать больше</a>
+                      </div>
+                  </div>
+              </div>
+                  </div>
+              </div>
+            </div>
+        </section>
+        <section class="section section-solution">
+            <div class="wrapper wrapper-center">
+              <div class="col col-10">
+                <div class="text-wrap text-center">
+                  <h2><%- t("solutionHeader") %></h2>
+                  <p><%- t("solutionSubheader") %></p>
+                </div>
+              </div>
+              <div class="col col-3" >
+                <div class="text-wrap text-center">
+                  <div class="solution-card">
+                    <img src="<%= imageRoot %>/bundle11.png" alt="" />
+                    <div class="solution-textWrapper">
+                      <p class="solution-header"><%- t("solutionBundle1Header") %></h3>
+                      <p class="solution-price"><%- t("solutionBundle1Text") %></p>
+                    </div>
+                    <div class="buttons buttons-column solution-buttons">
+                        <a href="#pack-1" class="btn cta cta--contained cta--black open-pack"><%- t("solutionBuy") %></a>
+                      </div>
+                    <h5 class="solution-date"><%- t("solutionDate") %></h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-3" >
+                <div class="text-wrap text-center">
+                  <div class="solution-card">
+                    <img src="<%= imageRoot %>/bundle2.png" alt="" />
+                    <div class="solution-textWrapper">
+                      <p class="solution-header"><%- t("solutionBundle2Header") %></h3>
+                      <p class="solution-price"><%- t("solutionBundle2Text") %></p>
+                    </div>
+                    <div class="buttons buttons-column solution-buttons">
+                        <a href="#pack-2" class="btn cta cta--contained cta--black open-pack"><%- t("solutionBuy") %></a>
+                      </div>
+                    <h5 class="solution-date"><%- t("solutionDate") %></h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-3" >
+                <div class="text-wrap text-center">
+                  <div class="solution-card">
+                    <img src="<%= imageRoot %>/bundle3.png" alt="" />
+                    <div class="solution-textWrapper">
+                      <p class="solution-header"><%- t("solutionBundle3Header") %></h3>
+                      <p class="solution-price"><%- t("solutionBundle3Text") %></p>
+                    </div>
+                    <div class="buttons buttons-column solution-buttons">
+                        <a href="#pack-3" class="btn cta cta--contained cta--black open-pack"><%- t("solutionBuy") %></a>
+                      </div>
+                    <h5 class="solution-date"><%- t("solutionDate") %></h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-3" >
+                <div class="text-wrap text-center">
+                  <div class="solution-card">
+                    <img src="<%= imageRoot %>/bundle4.png" alt="" />
+                    <div class="solution-textWrapper">
+                      <p class="solution-header"><%- t("solutionBundle4Header") %></h3>
+                      <p class="solution-price"><%- t("solutionBundle4Text") %></p>
+                    </div>
+                    <div class="buttons buttons-column solution-buttons">
+                        <a href="#pack-4" class="btn cta cta--contained cta--black open-pack"><%- t("solutionBuy") %></a>
+                      </div>
+                    <h5 class="solution-date"><%- t("solutionDate") %></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <div class="my-pop" style="display:none;">
+          <div class="pop-content-wrap">
+              <div class="pop-content">
+                  <div class="pop-body-outer">
+                      <a href="javascript:void(0);" class="pop-close"><span>закрыть</span></a>
+                      <div class="pop-body">
+                          ------
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+        <div class="my-bundle-pop" style="display:none;">
+          <div class="pop-content-wrap">
+              <div class="pop-content">
+                  <div class="pop-body-outer">
+                      <a href="javascript:void(0);" class="pop-close"><span>закрыть</span></a>
+                      <div class="pop-body">
+                          <h2 data-font-size-pc="48" data-font-size-mo="44" class="pop-title">Настроить набор</h2>
+                          <!-- START BUNDLE BLOCK -->
+                          <div class="section products bundles" id="pack-1" data-pack="1" style="display:none;">
+                              <div class="innerWrap">
+                                  <div class="products-list bundle-products-list">
+                                      <div class="spinner" style="text-align: center; position: relative; height: 48px; width: 100%; display: block;">
+                                          <div id="fountainG">
+                                              <div id="fountainG_1" class="fountainG"></div>
+                                              <div id="fountainG_2" class="fountainG"></div>
+                                              <div id="fountainG_3" class="fountainG"></div>
+                                              <div id="fountainG_4" class="fountainG"></div>
+                                              <div id="fountainG_5" class="fountainG"></div>
+                                              <div id="fountainG_6" class="fountainG"></div>
+                                              <div id="fountainG_7" class="fountainG"></div>
+                                              <div id="fountainG_8" class="fountainG"></div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="bundles-summary">
+                                      <div class="s-wrap">
+                                          <a href="javascript:void(0);" class="cta cta--black cta--contained cta-buy-bundle cta--disabled" data-omni-type="microsite" data-omni="kz_ru:offer:ecosystempromo:buy pack-1">Оформить заказ</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="section products bundles" id="pack-2" data-pack="2" style="display:none;">
+                              <div class="innerWrap">
+                                  <div class="products-list bundle-products-list">
+                                      <div class="spinner" style="text-align: center; position: relative; height: 48px; width: 100%; display: block;">
+                                          <div id="fountainG">
+                                              <div id="fountainG_1" class="fountainG"></div>
+                                              <div id="fountainG_2" class="fountainG"></div>
+                                              <div id="fountainG_3" class="fountainG"></div>
+                                              <div id="fountainG_4" class="fountainG"></div>
+                                              <div id="fountainG_5" class="fountainG"></div>
+                                              <div id="fountainG_6" class="fountainG"></div>
+                                              <div id="fountainG_7" class="fountainG"></div>
+                                              <div id="fountainG_8" class="fountainG"></div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="bundles-summary">
+                                      <div class="s-wrap">
+                                          <a href="javascript:void(0);" class="cta cta--black cta--contained cta-buy-bundle cta--disabled" data-omni-type="microsite" data-omni="kz_ru:offer:ecosystempromo:buy pack-1">Оформить заказ</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="section products bundles" id="pack-3" data-pack="3" style="display:none;">
+                              <div class="innerWrap">
+                                  <div class="products-list bundle-products-list">
+                                      <div class="spinner" style="text-align: center; position: relative; height: 48px; width: 100%; display: block;">
+                                          <div id="fountainG">
+                                              <div id="fountainG_1" class="fountainG"></div>
+                                              <div id="fountainG_2" class="fountainG"></div>
+                                              <div id="fountainG_3" class="fountainG"></div>
+                                              <div id="fountainG_4" class="fountainG"></div>
+                                              <div id="fountainG_5" class="fountainG"></div>
+                                              <div id="fountainG_6" class="fountainG"></div>
+                                              <div id="fountainG_7" class="fountainG"></div>
+                                              <div id="fountainG_8" class="fountainG"></div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="bundles-summary">
+                                      <div class="s-wrap">
+                                          <a href="javascript:void(0);" class="cta cta--black cta--contained cta-buy-bundle cta--disabled" data-omni-type="microsite" data-omni="kz_ru:offer:ecosystempromo:buy pack-1">Оформить заказ</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="section products bundles" id="pack-4" data-pack="4" style="display:none;">
+                              <div class="innerWrap">
+                                  <div class="products-list bundle-products-list">
+                                      <div class="spinner" style="text-align: center; position: relative; height: 48px; width: 100%; display: block;">
+                                          <div id="fountainG">
+                                              <div id="fountainG_1" class="fountainG"></div>
+                                              <div id="fountainG_2" class="fountainG"></div>
+                                              <div id="fountainG_3" class="fountainG"></div>
+                                              <div id="fountainG_4" class="fountainG"></div>
+                                              <div id="fountainG_5" class="fountainG"></div>
+                                              <div id="fountainG_6" class="fountainG"></div>
+                                              <div id="fountainG_7" class="fountainG"></div>
+                                              <div id="fountainG_8" class="fountainG"></div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="bundles-summary">
+                                      <div class="s-wrap">
+                                          <a href="javascript:void(0);" class="cta cta--black cta--contained cta-buy-bundle cta--disabled" data-omni-type="microsite" data-omni="kz_ru:offer:ecosystempromo:buy pack-1">Оформить заказ</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+        <section class="section section-communication">
+            <div class="wrapper wrapper-center">
+              <div class="col col-8">
+                <div class="text-wrap text-center">
+                  <h2><%- t("communicationHeader") %></h2>
+                  <p><%- t("communicationSubheader") %></p>
+                </div>
+              </div>
+              <div class="col-break"></div>
+              <div class="col col-3">
+                <div class="communication-card communication-card1">
+                  <p class="communication-text"><%- t("communcationCard1") %></p>
+                  <a href="<%- t("communcationCard1Link") %> " class="btn btn-white"><%- t("solutionMore") %> </a>
+                </div>
+              </div>
+              <div class="col col-3">
+                <div class="communication-card communication-card2">
+                  <p class="communication-text"><%- t("communcationCard2") %></p>
+                  <a href="<%- t("communcationCard2Link") %> " class="btn btn-white"><%- t("solutionMore") %> </a>
+                </div>
+              </div>
+              <div class="col col-3">
+                <div class="communication-card communication-card3">
+                  <p class="communication-text"><%- t("communcationCard3") %></p>
+                  <a href="<%- t("communcationCard3Link") %> " class="btn btn-white"><%- t("solutionMore") %> </a>
+                </div>
+              </div>
+              <div class="col col-3">
+                <div class="communication-card communication-card4">
+                  <p class="communication-text"><%- t("communcationCard4") %></p>
+                  <a href="<%- t("communcationCard4Link") %> " class="btn btn-white"><%- t("solutionMore") %> </a>
+                </div>
+              </div>
+              <div class="col col-3">
+                <div class="communication-card communication-card5">
+                  <p class="communication-text"><%- t("communcationCard5") %></p>
+                  <a href="<%- t("communcationCard5Link") %> " class="btn btn-white"><%- t("solutionMore") %> </a>
+                </div>
+              </div>
+              <div class="col col-3">
+                <div class="communication-card communication-card6">
+                  <p class="communication-text"><%- t("communcationCard6") %></p>
+                  <a href="<%- t("communcationCard6Link") %> " class="btn btn-white"><%- t("solutionMore") %> </a>
+                </div>
+              </div>
+              <div class="col col-3">
+                <div class="communication-card communication-card7">
+                  <p class="communication-text"><%- t("communcationCard7") %></p>
+                  <a href="<%- t("communcationCard7Link") %> " class="btn btn-white"><%- t("solutionMore") %> </a>
+                </div>
+              </div>
+              <div class="col col-3">
+                <div class="communication-card communication-card8">
+                  <p class="communication-text"><%- t("communcationCard8") %></p>
+                  <a href="<%- t("communcationCard8Link") %> " class="btn btn-white"><%- t("solutionMore") %> </a>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section class="section section-connect">
+            <div class="wrapper wrapper-center">
+              <div class="col col-12">
+                <div class="text-wrap text-center">
+                  <h2 class="connect-header">
+                    <%- t("smartThingsHeader") %> 
+                  </h2>
+                  <div class="buttons">
+                    <a href="<%- t("smartThingslink") %>" class="btn btn-black"><%- t("smartThingsBtn") %></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section class="section section-connect_mob">
+            <div class="wrapper">
+              <div class="col col-8">
+                <div class="text-wrap text-center">
+                  <h2><%- t("communicationHeader") %></h2>
+                  <p><%- t("communicationSubheader") %></p>
+                </div>
+              </div>
+              <div class="col-break"></div>
+              <div class="text-wrap">
+                <div class="connectMob-wrapper">
+                  <a href="<%- t("communcationCard1Link") %>" class="communication-card communication-card1">
+                    <p class="communication-text"><%- t("communcationCard1") %></p>
+                  </a>
+                  <a href="<%- t("communcationCard2Link") %>" class="communication-card communication-card2">
+                    <p class="communication-text"><%- t("communcationCard2") %></p>
+                  </a>
+                  <a href="<%- t("communcationCard3Link") %>" class="communication-card communication-card3">
+                    <p class="communication-text"><%- t("communcationCard3") %></p>
+                  </a>
+                  <a href="<%- t("communcationCard4Link") %>" class="communication-card communication-card4">
+                    <p class="communication-text"><%- t("communcationCard4") %></p>
+                  </a>
+                  <a href="<%- t("communcationCard5Link") %>" class="communication-card communication-card5">
+                    <p class="communication-text"><%- t("communcationCard5") %></p>
+                  </a>
+                  <a href="<%- t("communcationCard6Link") %>" class="communication-card communication-card6">
+                    <p class="communication-text"><%- t("communcationCard6") %></p>
+                  </a>
+                  <a href="<%- t("communcationCard7Link") %>" class="communication-card communication-card7">
+                    <p class="communication-text"><%- t("communcationCard7") %></p>
+                  </a>
+                  <a href="<%- t("communcationCard8Link") %>" class="communication-card communication-card8">
+                    <p class="communication-text"><%- t("communcationCard8") %></p>
+                  </a>
+                </div>
+              </div>
+              <div class="col col-12">
+                <div class="text-wrap text-center">
+                  <h2 class="connect-header">
+                    <%- t("smartThingsHeader") %> 
+                  </h2>
+                  <div class="buttons">
+                    <a href="<%- t("smartThingslink") %>" class="btn btn-black"><%- t("smartThingsBtn") %></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+    </div>
+</div>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</body>
+</html>
