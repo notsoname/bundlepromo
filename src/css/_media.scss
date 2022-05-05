@@ -52,7 +52,7 @@
   .share {
     &-card {
       width: vw(312, $unitPxVw);
-      height: vw(312, $unitPxVw);
+      min-height: vw(312, $unitPxVw);
     }
   }
   .solution {
@@ -76,7 +76,7 @@
   .connect {
     &-header {
       font-size: vw(14, $unitPxVw);
-      margin-top: vw(339, $unitPxVw);
+      margin-top: vw(280, $unitPxVw);
     }
   }
   .connectMob {

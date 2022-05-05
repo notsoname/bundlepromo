@@ -73,7 +73,7 @@ const _youtube = require('./_youtube.ejs');
                     <%- t("mainSubheader1") %>
                   </p>
                   <div class="buttons">
-                    <a href="#more" class="btn btn-black"><%- t("mainMore") %></button>
+                    <a href="#more" data-omni-base="<%- omniBase %>" data-omni="<%- omniBase %>:goto:more" class="btn btn-black"><%- t("mainMore") %></button>
                   </div>
                 </div>
               </div>
@@ -106,19 +106,34 @@ const _youtube = require('./_youtube.ejs');
                     <button
                       data-room="general"
                       class="btn btn-encased btn-encased-active"
+                      data-omni-base="<%- omniBase %>" 
+                      data-omni="<%- omniBase %>:select:general"
                     >
                       <%- t("shareGeneral") %>
                     </button>
                     <button
                       data-room="kitchen"
                       class="btn btn-encased"
+                      data-omni-base="<%- omniBase %>" 
+                      data-omni="<%- omniBase %>:select:kitchen"
                     >
                       <%- t("shareKitchen") %>
                     </button>
-                    <button data-room="livingroom" class="btn btn-encased">
+                    <button 
+                    data-room="livingroom" 
+                    class="btn btn-encased"
+                    data-omni-base="<%- omniBase %>" 
+                    data-omni="<%- omniBase %>:select:livingroom"
+                    >
+                    
                       <%- t("shareLivingroom") %>
                     </button>
-                    <button data-room="kidrom" class="btn btn-encased">
+                    <button 
+                    data-room="kidrom" 
+                    class="btn btn-encased"
+                    data-omni-base="<%- omniBase %>" 
+                    data-omni="<%- omniBase %>:select:kidroom"
+                    >
                       <%- t("shareBathroom") %>
                     </button>
                   </div>
@@ -130,14 +145,20 @@ const _youtube = require('./_youtube.ejs');
                       <img src="<%= imageRoot %>/general1.png" alt="general">
                       <p class="bold"><%- t("shareGeneral1") %> </p>
                       <div class="buttons">
-                          <button data-rec="general1" class="btn btn-black recomendation"><%- t("shareRead") %> </button>
+                          <button 
+                          data-omni-base="<%- omniBase %>" 
+                          data-omni="<%- omniBase %>:read:general1"
+                          data-rec="general1" class="btn btn-black recomendation"><%- t("shareRead") %> </button>
                       </div>
                   </div>
                   <div class="share-card">
                       <img src="<%= imageRoot %>/general2.png" alt="general">
                       <p class="bold"><%- t("shareGeneral2") %> </p>
                       <div class="buttons">
-                          <button data-rec="general2" class="btn btn-black recomendation"><%- t("shareRead") %> </button>
+                          <button 
+                          data-omni-base="<%- omniBase %>" 
+                          data-omni="<%- omniBase %>:read:general2"
+                          data-rec="general2" class="btn btn-black recomendation"><%- t("shareRead") %> </button>
                       </div>
                   </div>
               </div>
@@ -146,7 +167,10 @@ const _youtube = require('./_youtube.ejs');
                       <img src="<%= imageRoot %>/kitchencard.png" alt="general">
                       <p class="bold"><%- t("shareKitchen") %> </p>
                       <div class="buttons">
-                          <button data-rec="kitchen" class="btn btn-black recomendation"><%- t("shareRead") %> </button>
+                          <button 
+                          data-omni-base="<%- omniBase %>" 
+                          data-omni="<%- omniBase %>:read:kitchen"
+                          data-rec="kitchen" class="btn btn-black recomendation"><%- t("shareRead") %> </button>
                       </div>
                   </div>
               </div>
@@ -155,7 +179,10 @@ const _youtube = require('./_youtube.ejs');
                       <img src="<%= imageRoot %>/livingcard.png" alt="general">
                       <p class="bold"><%- t("shareLivingroom") %> </p>
                       <div class="buttons">
-                          <button data-rec="living" class="btn btn-black recomendation"><%- t("shareRead") %> </button>
+                          <button 
+                          data-omni-base="<%- omniBase %>" 
+                          data-omni="<%- omniBase %>:read:livingroom"
+                          data-rec="living" class="btn btn-black recomendation"><%- t("shareRead") %> </button>
                       </div>
                   </div>
               </div>
@@ -164,7 +191,10 @@ const _youtube = require('./_youtube.ejs');
                       <img src="<%= imageRoot %>/kidcard.png" alt="general">
                       <p class="bold"><%- t("shareBathroom") %> </p>
                       <div class="buttons">
-                          <button data-rec="kid" class="btn btn-black recomendation"><%- t("shareRead") %> </button>
+                          <button 
+                          data-omni-base="<%- omniBase %>" 
+                          data-omni="<%- omniBase %>:read:kidroom"
+                          data-rec="kid" class="btn btn-black recomendation"><%- t("shareRead") %> </button>
                       </div>
                   </div>
               </div>
@@ -192,7 +222,10 @@ const _youtube = require('./_youtube.ejs');
                       <p class="solution-price"><%- t("solutionBundle1Text") %></p>
                     </div>
                     <div class="buttons buttons-column solution-buttons">
-                        <a href="#pack-1" class="btn cta cta--contained cta--black open-pack"><%- t("solutionBuy") %></a>
+                        <a 
+                        data-omni-base="<%- omniBase %>" 
+                        data-omni="<%- omniBase %>:buy:bundle1"
+                        href="#pack-1" class="btn cta cta--contained cta--black open-pack"><%- t("solutionBuy") %></a>
                       </div>
                     <h5 class="solution-date"><%- t("solutionDate") %></h3>
                   </div>
@@ -207,7 +240,10 @@ const _youtube = require('./_youtube.ejs');
                       <p class="solution-price"><%- t("solutionBundle2Text") %></p>
                     </div>
                     <div class="buttons buttons-column solution-buttons">
-                        <a href="#pack-2" class="btn cta cta--contained cta--black open-pack"><%- t("solutionBuy") %></a>
+                        <a 
+                        data-omni-base="<%- omniBase %>" 
+                        data-omni="<%- omniBase %>:buy:bundle2"
+                        href="#pack-2" class="btn cta cta--contained cta--black open-pack"><%- t("solutionBuy") %></a>
                       </div>
                     <h5 class="solution-date"><%- t("solutionDate") %></h3>
                   </div>
@@ -222,7 +258,10 @@ const _youtube = require('./_youtube.ejs');
                       <p class="solution-price"><%- t("solutionBundle3Text") %></p>
                     </div>
                     <div class="buttons buttons-column solution-buttons">
-                        <a href="#pack-3" class="btn cta cta--contained cta--black open-pack"><%- t("solutionBuy") %></a>
+                        <a 
+                        data-omni-base="<%- omniBase %>" 
+                        data-omni="<%- omniBase %>:buy:bundle3"
+                        href="#pack-3" class="btn cta cta--contained cta--black open-pack"><%- t("solutionBuy") %></a>
                       </div>
                     <h5 class="solution-date"><%- t("solutionDate") %></h3>
                   </div>
@@ -237,7 +276,10 @@ const _youtube = require('./_youtube.ejs');
                       <p class="solution-price"><%- t("solutionBundle4Text") %></p>
                     </div>
                     <div class="buttons buttons-column solution-buttons">
-                        <a href="#pack-4" class="btn cta cta--contained cta--black open-pack"><%- t("solutionBuy") %></a>
+                        <a 
+                        data-omni-base="<%- omniBase %>" 
+                        data-omni="<%- omniBase %>:buy:bundle4"
+                        href="#pack-4" class="btn cta cta--contained cta--black open-pack"><%- t("solutionBuy") %></a>
                       </div>
                     <h5 class="solution-date"><%- t("solutionDate") %></h3>
                   </div>
@@ -263,7 +305,7 @@ const _youtube = require('./_youtube.ejs');
                   <div class="pop-body-outer">
                       <a href="javascript:void(0);" class="pop-close"><span>закрыть</span></a>
                       <div class="pop-body">
-                          <h2 data-font-size-pc="48" data-font-size-mo="44" class="pop-title">Настроить набор</h2>
+                          <h2 data-font-size-pc="48" data-font-size-mo="44" class="pop-title"><%- t("bundleSet") %> </h2>
                           <!-- START BUNDLE BLOCK -->
                           <div class="section products bundles" id="pack-1" data-pack="1" style="display:none;">
                               <div class="innerWrap">
@@ -283,7 +325,7 @@ const _youtube = require('./_youtube.ejs');
                                   </div>
                                   <div class="bundles-summary">
                                       <div class="s-wrap">
-                                          <a href="javascript:void(0);" class="cta cta--black cta--contained cta-buy-bundle cta--disabled" data-omni-type="microsite" data-omni="kz_ru:offer:ecosystempromo:buy pack-1">Оформить заказ</a>
+                                          <a href="javascript:void(0);" class="cta cta--black cta--contained cta-buy-bundle cta--disabled" data-omni-type="microsite" data-omni="kz_ru:offer:ecosystempromo:buy pack-1"><%- t("bundleOrder") %> </a>
                                       </div>
                                   </div>
                               </div>
@@ -306,7 +348,7 @@ const _youtube = require('./_youtube.ejs');
                                   </div>
                                   <div class="bundles-summary">
                                       <div class="s-wrap">
-                                          <a href="javascript:void(0);" class="cta cta--black cta--contained cta-buy-bundle cta--disabled" data-omni-type="microsite" data-omni="kz_ru:offer:ecosystempromo:buy pack-1">Оформить заказ</a>
+                                          <a href="javascript:void(0);" class="cta cta--black cta--contained cta-buy-bundle cta--disabled" data-omni-type="microsite" data-omni="kz_ru:offer:ecosystempromo:buy pack-1"><%- t("bundleOrder") %></a>
                                       </div>
                                   </div>
                               </div>
@@ -329,7 +371,7 @@ const _youtube = require('./_youtube.ejs');
                                   </div>
                                   <div class="bundles-summary">
                                       <div class="s-wrap">
-                                          <a href="javascript:void(0);" class="cta cta--black cta--contained cta-buy-bundle cta--disabled" data-omni-type="microsite" data-omni="kz_ru:offer:ecosystempromo:buy pack-1">Оформить заказ</a>
+                                          <a href="javascript:void(0);" class="cta cta--black cta--contained cta-buy-bundle cta--disabled" data-omni-type="microsite" data-omni="kz_ru:offer:ecosystempromo:buy pack-1"><%- t("bundleOrder") %></a>
                                       </div>
                                   </div>
                               </div>
@@ -352,7 +394,7 @@ const _youtube = require('./_youtube.ejs');
                                   </div>
                                   <div class="bundles-summary">
                                       <div class="s-wrap">
-                                          <a href="javascript:void(0);" class="cta cta--black cta--contained cta-buy-bundle cta--disabled" data-omni-type="microsite" data-omni="kz_ru:offer:ecosystempromo:buy pack-1">Оформить заказ</a>
+                                          <a href="javascript:void(0);" class="cta cta--black cta--contained cta-buy-bundle cta--disabled" data-omni-type="microsite" data-omni="kz_ru:offer:ecosystempromo:buy pack-1"><%- t("bundleOrder") %></a>
                                       </div>
                                   </div>
                               </div>
@@ -374,49 +416,73 @@ const _youtube = require('./_youtube.ejs');
               <div class="col col-3">
                 <div class="communication-card communication-card1">
                   <p class="communication-text"><%- t("communcationCard1") %></p>
-                  <a href="<%- t("communcationCard1Link") %> " class="btn btn-white"><%- t("solutionMore") %> </a>
+                  <a 
+                  data-omni-base="<%- omniBase %>" 
+                  data-omni="<%- omniBase %>:learmore:air conditioning"
+                  href="<%- t("communcationCard1Link") %> " class="btn btn-white"><%- t("solutionMore") %> </a>
                 </div>
               </div>
               <div class="col col-3">
                 <div class="communication-card communication-card2">
                   <p class="communication-text"><%- t("communcationCard2") %></p>
-                  <a href="<%- t("communcationCard2Link") %> " class="btn btn-white"><%- t("solutionMore") %> </a>
+                  <a 
+                  data-omni-base="<%- omniBase %>" 
+                  data-omni="<%- omniBase %>:learmore:air purifier"
+                  href="<%- t("communcationCard2Link") %> " class="btn btn-white"><%- t("solutionMore") %> </a>
                 </div>
               </div>
               <div class="col col-3">
                 <div class="communication-card communication-card3">
                   <p class="communication-text"><%- t("communcationCard3") %></p>
-                  <a href="<%- t("communcationCard3Link") %> " class="btn btn-white"><%- t("solutionMore") %> </a>
+                  <a 
+                  data-omni-base="<%- omniBase %>" 
+                  data-omni="<%- omniBase %>:learmore:steam cabinet"
+                  href="<%- t("communcationCard3Link") %> " class="btn btn-white"><%- t("solutionMore") %> </a>
                 </div>
               </div>
               <div class="col col-3">
                 <div class="communication-card communication-card4">
                   <p class="communication-text"><%- t("communcationCard4") %></p>
-                  <a href="<%- t("communcationCard4Link") %> " class="btn btn-white"><%- t("solutionMore") %> </a>
+                  <a 
+                  data-omni-base="<%- omniBase %>" 
+                  data-omni="<%- omniBase %>:learmore:TV"
+                  href="<%- t("communcationCard4Link") %> " class="btn btn-white"><%- t("solutionMore") %> </a>
                 </div>
               </div>
               <div class="col col-3">
                 <div class="communication-card communication-card5">
                   <p class="communication-text"><%- t("communcationCard5") %></p>
-                  <a href="<%- t("communcationCard5Link") %> " class="btn btn-white"><%- t("solutionMore") %> </a>
+                  <a 
+                  data-omni-base="<%- omniBase %>" 
+                  data-omni="<%- omniBase %>:learmore:vacuum cleaner robot"
+                  href="<%- t("communcationCard5Link") %> " class="btn btn-white"><%- t("solutionMore") %> </a>
                 </div>
               </div>
               <div class="col col-3">
                 <div class="communication-card communication-card6">
                   <p class="communication-text"><%- t("communcationCard6") %></p>
-                  <a href="<%- t("communcationCard6Link") %> " class="btn btn-white"><%- t("solutionMore") %> </a>
+                  <a 
+                  data-omni-base="<%- omniBase %>" 
+                  data-omni="<%- omniBase %>:learmore:oven"
+                  href="<%- t("communcationCard6Link") %> " class="btn btn-white"><%- t("solutionMore") %> </a>
                 </div>
               </div>
               <div class="col col-3">
                 <div class="communication-card communication-card7">
                   <p class="communication-text"><%- t("communcationCard7") %></p>
-                  <a href="<%- t("communcationCard7Link") %> " class="btn btn-white"><%- t("solutionMore") %> </a>
+                  <a 
+                  data-omni-base="<%- omniBase %>" 
+                  data-omni="<%- omniBase %>:learmore:washing machine"
+                  href="<%- t("communcationCard7Link") %> " class="btn btn-white"><%- t("solutionMore") %> </a>
                 </div>
               </div>
               <div class="col col-3">
                 <div class="communication-card communication-card8">
                   <p class="communication-text"><%- t("communcationCard8") %></p>
-                  <a href="<%- t("communcationCard8Link") %> " class="btn btn-white"><%- t("solutionMore") %> </a>
+                  <a 
+                  data-omni-base="<%- omniBase %>" 
+                  data-omni="<%- omniBase %>:learmore:dryer"
+                  href="<%- t("communcationCard8Link") %> " class="btn btn-white"><%- t("solutionMore") %> </a>
                 </div>
               </div>
             </div>
@@ -478,7 +544,10 @@ const _youtube = require('./_youtube.ejs');
                     <%- t("smartThingsHeader") %> 
                   </h2>
                   <div class="buttons">
-                    <a href="<%- t("smartThingslink") %>" class="btn btn-black"><%- t("smartThingsBtn") %></a>
+                    <a 
+                    data-omni-base="<%- omniBase %>" 
+                    data-omni="<%- omniBase %>:goto:smartthings"
+                    href="<%- t("smartThingslink") %>" class="btn btn-black"><%- t("smartThingsBtn") %></a>
                   </div>
                 </div>
               </div>

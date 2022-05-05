@@ -1186,7 +1186,6 @@ body {
     &-card {
       background-color: #F7F6F5;
       min-height: 654px;
-      // width: 330px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -1194,17 +1193,17 @@ body {
       padding-bottom: 36px;
     }
     &-btns {
-      // margin-bottom: 36px;
       padding: 0 32px;
     }
     &-price {
+      margin-top: 36px;
       font-size: 22px;
     }
     &-date {
       font-size: 14px;
     }
     &-header {
-      
+      height: 68px;
       font-size: 16px;
     }
   }
@@ -1261,8 +1260,7 @@ body {
       color: #ffffff;
     }
   }
-  
-  
+
   .none {
     display: none !important;
   }
@@ -1291,11 +1289,6 @@ body {
       z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
       display: flex;
       justify-content: center;
-    }
-    &-header {
-      &-2 {
-        margin-top: 12px !important;
-      }
     }
     transition: 0.3s all;
     position: absolute;
@@ -1443,6 +1436,11 @@ body {
       &-price {
         margin-top: 16px;
         font-weight: 700;
+      }
+    }
+    &-header {
+      &-2 {
+        margin-top: 30px !important;
       }
     }
   }

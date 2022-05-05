@@ -3,6 +3,7 @@ recomendationBtns.forEach((rec) => {
       let data = e.target.dataset.rec;
       if (data == "general1") {
         overlay.classList.remove("none");
+        document.body.style.overflow = 'hidden'
       //   document.body.style.overflow = "hidden"
         popup.innerHTML = `
         <div class="desktop">
@@ -34,44 +35,44 @@ recomendationBtns.forEach((rec) => {
     <div class="popup-wrapper">
         <div class="popup-itemCard">
             <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/fridge.png" alt="fridge">
-            <div class="bold popup-itemCard-name">Паровой шкаф <br> для ухода за одеждой</div>
+            <div class="bold popup-itemCard-name">Киімді күтуге арналған <br> бу шкафы</div>
             <div class="popup-itemCard-model">DF10A9500CG/LP</div>
-            <div class="popup-itemCard-color"><b>Цвет</b>: серый</div>
+            <div class="popup-itemCard-color"><b>Цвет</b>: сұр</div>
             <button class="color-wrapper">
               <div class="color-inner color-grey"></div>
             </button>
             <div class="popup-itemCard-price">1 199 990 ₸</div>
             <div class="buttons buttons-column">
                 <button data-id="DF10A9500CG/LP" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-                <a href="https://www.samsung.com/kz_kz/washers-and-dryers/airdresser/df9000rm-silver-mirror-df10a9500cg-lp/" class="btn btn-link btn-link-underline">Узнать больше</a>
+                <a href="https://www.samsung.com/kz_kz/washers-and-dryers/airdresser/df9000rm-silver-mirror-df10a9500cg-lp/" class="btn btn-link btn-link-underline">Көбірек білу</a>
             </div>
         </div>
         <div class="popup-itemCard">
             <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/generalItem2.png" alt="generalItem2">
             <div class="bold popup-itemCard-name">The Frame Art Mode 4K <br> Smart TV (2021)</div>
             <div class="popup-itemCard-model">QE43LS03AAUXCE</div>
-            <div class="popup-itemCard-color"><b>Выберите цвет cвоей рамки</b></div>
+            <div class="popup-itemCard-color"><b>Жақтауыңыздың түсін таңдаңыз</b></div>
             <button class="color-wrapper">
               <div class="color-inner color-white"></div>
             </button>
             <div class="popup-itemCard-price">399 990 ₸</div>
             <div class="buttons buttons-column">
                 <button data-id="QE43LS03AAUXCE" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-                <a href="https://www.samsung.com/kz_kz/lifestyle-tvs/the-frame/ls03a-43-inch-the-frame-art-mode-4k-smart-tv-black-qe43ls03aauxce/" class="btn btn-link btn-link-underline">Узнать больше</a>
+                <a href="https://www.samsung.com/kz_kz/lifestyle-tvs/the-frame/ls03a-43-inch-the-frame-art-mode-4k-smart-tv-black-qe43ls03aauxce/" class="btn btn-link btn-link-underline">Көбірек білу</a>
             </div>
         </div>
         <div class="popup-itemCard">
             <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/jetBot.png" alt="generalItem2">
             <div class="bold popup-itemCard-name">Jet Bot AI+ <br> робот-шаңсорғышы</div>
             <div class="popup-itemCard-model">VR50T95735W/EV</div>
-            <div class="popup-itemCard-color"><b>Цвет</b>: Белый</div>
+            <div class="popup-itemCard-color"><b>Цвет</b>: ақ</div>
             <button class="color-wrapper">
               <div class="color-inner color-white"></div>
             </button>
             <div class="popup-itemCard-price">499 990 ₸</div>
             <div class="buttons buttons-column">
                 <button data-id="VR50T95735W/EV" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-                <a href="https://www.samsung.com/kz_kz/vacuum-cleaners/robot/vr9500t-white-vr50t95735w-ev/" class="btn btn-link btn-link-underline">Узнать больше</a>
+                <a href="https://www.samsung.com/kz_kz/vacuum-cleaners/robot/vr9500t-white-vr50t95735w-ev/" class="btn btn-link btn-link-underline">Көбірек білу</a>
             </div>
         </div>
       </div>
@@ -106,44 +107,44 @@ recomendationBtns.forEach((rec) => {
   <div class="popup-wrapper popup-wrapper-nogap">
       <div class="popup-itemCard">
           <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/fridge.png" alt="fridge">
-          <div class="bold popup-itemCard-name">Паровой шкаф <br> для ухода за одеждой</div>
+          <div class="bold popup-itemCard-name">Киімді күтуге арналған <br> бу шкафы</div>
           <div class="popup-itemCard-model">DF10A9500CG/LP</div>
-          <div class="popup-itemCard-color"><b>Цвет</b>: серый</div>
+          <div class="popup-itemCard-color"><b>Цвет</b>: сұр</div>
           <button class="color-wrapper">
             <div class="color-inner color-grey"></div>
           </button>
           <div class="popup-itemCard-price">1 199 990 ₸</div>
           <div class="buttons buttons-column">
               <button data-id="DF10A9500CG/LP" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-              <a href="https://www.samsung.com/kz_kz/washers-and-dryers/airdresser/df9000rm-silver-mirror-df10a9500cg-lp/" class="btn btn-link btn-link-underline">Узнать больше</a>
+              <a href="https://www.samsung.com/kz_kz/washers-and-dryers/airdresser/df9000rm-silver-mirror-df10a9500cg-lp/" class="btn btn-link btn-link-underline">Көбірек білу</a>
           </div>
       </div>
       <div class="popup-itemCard">
           <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/generalItem2.png" alt="generalItem2">
           <div class="bold popup-itemCard-name">The Frame Art Mode 4K <br> Smart TV (2021)</div>
           <div class="popup-itemCard-model">QE43LS03AAUXCE</div>
-          <div class="popup-itemCard-color"><b>Выберите цвет cвоей рамки</b></div>
+          <div class="popup-itemCard-color"><b>Жақтауыңыздың түсін таңдаңыз</b></div>
           <button class="color-wrapper">
             <div class="color-inner color-white"></div>
           </button>
           <div class="popup-itemCard-price">399 990 ₸</div>
           <div class="buttons buttons-column">
               <button data-id="QE43LS03AAUXCE" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-              <a href="https://www.samsung.com/kz_kz/lifestyle-tvs/the-frame/ls03a-43-inch-the-frame-art-mode-4k-smart-tv-black-qe43ls03aauxce/" class="btn btn-link btn-link-underline">Узнать больше</a>
+              <a href="https://www.samsung.com/kz_kz/lifestyle-tvs/the-frame/ls03a-43-inch-the-frame-art-mode-4k-smart-tv-black-qe43ls03aauxce/" class="btn btn-link btn-link-underline">Көбірек білу</a>
           </div>
       </div>
       <div class="popup-itemCard">
           <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/jetBot.png" alt="generalItem2">
           <div class="bold popup-itemCard-name">Jet Bot AI+ <br> робот-шаңсорғышы</div>
           <div class="popup-itemCard-model">VR50T95735W/EV</div>
-          <div class="popup-itemCard-color"><b>Цвет</b>: Белый</div>
+          <div class="popup-itemCard-color"><b>Цвет</b>: ақ</div>
           <button class="color-wrapper">
             <div class="color-inner color-white"></div>
           </button>
           <div class="popup-itemCard-price">499 990 ₸</div>
           <div class="buttons buttons-column">
               <button data-id="VR50T95735W/EV" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-              <a href="https://www.samsung.com/kz_kz/vacuum-cleaners/robot/vr9500t-white-vr50t95735w-ev/" class="btn btn-link btn-link-underline">Узнать больше</a>
+              <a href="https://www.samsung.com/kz_kz/vacuum-cleaners/robot/vr9500t-white-vr50t95735w-ev/" class="btn btn-link btn-link-underline">Көбірек білу</a>
           </div>
       </div>
     </div>
@@ -151,6 +152,7 @@ recomendationBtns.forEach((rec) => {
               `;
       } else if (data == "general2") {
         overlay.classList.remove("none");
+        document.body.style.overflow = 'hidden'
         popup.innerHTML = `
         <div class="desktop">
               <span>
@@ -186,42 +188,42 @@ recomendationBtns.forEach((rec) => {
                   <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/serif.png" alt="fridge">
                   <div class="bold popup-itemCard-name">The Serif 4K <br> Smart TV</div>
                   <div class="popup-itemCard-model">QE55LS01TAUXRU</div>
-                  <div class="popup-itemCard-color"><b>Цвет</b>: белый</div>
+                  <div class="popup-itemCard-color"><b>Түс</b>: ақ</div>
                   <button class="color-wrapper">
                     <div class="color-inner color-white"></div>
                   </button>
                   <div class="popup-itemCard-price">499 990 ₸</div>
                   <div class="buttons buttons-column">
                       <button data-id="QE55LS01TAUXRU" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-                      <a href="https://www.samsung.com/kz_kz/lifestyle-tvs/the-serif/the-serif-55-inch-4k-smart-tv-ls01t-cloud-white-qe55ls01tauxru/" class="btn btn-link btn-link-underline">Узнать больше</a>
+                      <a href="https://www.samsung.com/kz_kz/lifestyle-tvs/the-serif/the-serif-55-inch-4k-smart-tv-ls01t-cloud-white-qe55ls01tauxru/" class="btn btn-link btn-link-underline">Көбірек білу</a>
                   </div>
               </div>
               <div class="popup-itemCard">
                   <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/jetone.png" alt="generalItem2">
-                  <div class="bold popup-itemCard-name">BESPOKE Jet One, <br> Беспроводной пылесос</div>
+                  <div class="bold popup-itemCard-name">BESPOKE Jet One, <br> шаңсорғышы</div>
                   <div class="popup-itemCard-model">VS20A95973B/EV</div>
-                  <div class="popup-itemCard-color"><b>Цвет</b>: темно-синий</div>
+                  <div class="popup-itemCard-color"><b>Түс</b>: қара көк</div>
                   <button class="color-wrapper">
                     <div class="color-inner color-darkblue"></div>
                   </button>
                   <div class="popup-itemCard-price">549 990 ₸</div>
                   <div class="buttons buttons-column">
                       <button data-id="VS20A95973B/EV" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-                      <a href="https://www.samsung.com/kz_kz/vacuum-cleaners/stick/vs9500al-vc-with-all-in-one-clean-station-blue-vs20a95973b-ev/" class="btn btn-link btn-link-underline">Узнать больше</a>
+                      <a href="https://www.samsung.com/kz_kz/vacuum-cleaners/stick/vs9500al-vc-with-all-in-one-clean-station-blue-vs20a95973b-ev/" class="btn btn-link btn-link-underline">Көбірек білу</a>
                   </div>
               </div>
               <div class="popup-itemCard">
                   <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/fridgeBes.png" alt="generalItem2">
-                  <div class="bold popup-itemCard-name">BESPOKE тоңазытқышы  <br> с нижней морозильной камерой</div>
+                  <div class="bold popup-itemCard-name">BESPOKE тоңазытқышы</div>
                   <div class="popup-itemCard-model">RB38A7B62AP/WT</div>
-                  <div class="popup-itemCard-color"><b>Цвет</b>: Белый</div>
+                  <div class="popup-itemCard-color"><b>Түс</b>: ақ</div>
                   <button class="color-wrapper">
                     <div class="color-inner color-white"></div>
                   </button>
                   <div class="popup-itemCard-price">529 990 ₸</div>
                   <div class="buttons buttons-column">
                       <button data-id="RB38A7B62AP/WT" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-                      <a href="https://www.samsung.com/kz_kz/refrigerators/bottom-mount-freezer/rb7300t-385l-white-rb38a7b62ap-wt/" class="btn btn-link btn-link-underline">Узнать больше</a>
+                      <a href="https://www.samsung.com/kz_kz/refrigerators/bottom-mount-freezer/rb7300t-385l-white-rb38a7b62ap-wt/" class="btn btn-link btn-link-underline">Көбірек білу</a>
                   </div>
               </div>
           </div>
@@ -253,42 +255,42 @@ recomendationBtns.forEach((rec) => {
             <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/serif.png" alt="fridge">
             <div class="bold popup-itemCard-name">The Serif 4K <br> Smart TV</div>
             <div class="popup-itemCard-model">QE55LS01TAUXRU</div>
-            <div class="popup-itemCard-color"><b>Цвет</b>: белый</div>
+            <div class="popup-itemCard-color"><b>Түс</b>: ақ</div>
             <button class="color-wrapper">
               <div class="color-inner color-white"></div>
             </button>
             <div class="popup-itemCard-price">499 990 ₸</div>
             <div class="buttons buttons-column">
                 <button data-id="QE55LS01TAUXRU" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-                <a href="https://www.samsung.com/kz_kz/lifestyle-tvs/the-serif/the-serif-55-inch-4k-smart-tv-ls01t-cloud-white-qe55ls01tauxru/" class="btn btn-link btn-link-underline">Узнать больше</a>
+                <a href="https://www.samsung.com/kz_kz/lifestyle-tvs/the-serif/the-serif-55-inch-4k-smart-tv-ls01t-cloud-white-qe55ls01tauxru/" class="btn btn-link btn-link-underline">Көбірек білу</a>
             </div>
         </div>
         <div class="popup-itemCard">
             <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/jetone.png" alt="generalItem2">
             <div class="bold popup-itemCard-name">Jet Bespoke шаңсорғышы</div>
             <div class="popup-itemCard-model">VS20A95973B/EV</div>
-            <div class="popup-itemCard-color"><b>Цвет</b>: темно-синий</div>
+            <div class="popup-itemCard-color"><b>Түс</b>: қара көк</div>
             <button class="color-wrapper">
               <div class="color-inner color-darkblue"></div>
             </button>
             <div class="popup-itemCard-price">549 990 ₸</div>
             <div class="buttons buttons-column">
                 <button data-id="VS20A95973B/EV" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-                <a href="https://www.samsung.com/kz_kz/vacuum-cleaners/stick/vs9500al-vc-with-all-in-one-clean-station-blue-vs20a95973b-ev/" class="btn btn-link btn-link-underline">Узнать больше</a>
+                <a href="https://www.samsung.com/kz_kz/vacuum-cleaners/stick/vs9500al-vc-with-all-in-one-clean-station-blue-vs20a95973b-ev/" class="btn btn-link btn-link-underline">Көбірек білу</a>
             </div>
         </div>
         <div class="popup-itemCard">
             <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/fridgeBes.png" alt="generalItem2">
             <div class="bold popup-itemCard-name">BESPOKE тоңазытқышы</div>
             <div class="popup-itemCard-model">RB38A7B62AP/WT</div>
-            <div class="popup-itemCard-color"><b>Цвет</b>: Белый</div>
+            <div class="popup-itemCard-color"><b>Түс</b>: ақ</div>
             <button class="color-wrapper">
               <div class="color-inner color-white"></div>
             </button>
             <div class="popup-itemCard-price">529 990 ₸</div>
             <div class="buttons buttons-column">
                 <button data-id="RB38A7B62AP/WT" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-                <a href="https://www.samsung.com/kz_kz/refrigerators/bottom-mount-freezer/rb7300t-385l-white-rb38a7b62ap-wt/" class="btn btn-link btn-link-underline">Узнать больше</a>
+                <a href="https://www.samsung.com/kz_kz/refrigerators/bottom-mount-freezer/rb7300t-385l-white-rb38a7b62ap-wt/" class="btn btn-link btn-link-underline">Көбірек білу</a>
             </div>
         </div>
     </div>
@@ -296,6 +298,7 @@ recomendationBtns.forEach((rec) => {
                `;
       } else if (data == "living") {
         overlay.classList.remove("none");
+        document.body.style.overflow = 'hidden'
         popup.innerHTML = `
         <div class="desktop"> 
         <span>
@@ -324,7 +327,7 @@ recomendationBtns.forEach((rec) => {
                 <div class="popup-itemCard-price">5 499 990 ₸</div>
                 <div class="buttons buttons-column">
                     <button data-id="QE85QN900AUXCE" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-                    <a href="https://www.samsung.com/kz_kz/tvs/qled-tv/qn900a-85-inch-neo-qled-8k-smart-tv-qe85qn900auxce/" class="btn btn-link btn-link-underline">Узнать больше</a>
+                    <a href="https://www.samsung.com/kz_kz/tvs/qled-tv/qn900a-85-inch-neo-qled-8k-smart-tv-qe85qn900auxce/" class="btn btn-link btn-link-underline">Көбірек білу</a>
                 </div>
             </div>
             <div class="popup-itemCard">
@@ -334,21 +337,21 @@ recomendationBtns.forEach((rec) => {
                 <div class="popup-itemCard-price">259 990 ₸</div>
                 <div class="buttons buttons-column">
                     <button data-id="HW-Q700A/RU" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-                    <a href="https://www.samsung.com/kz_kz/audio-devices/soundbar/q700a-black-hw-q700a-ru/" class="btn btn-link btn-link-underline">Узнать больше</a>
+                    <a href="https://www.samsung.com/kz_kz/audio-devices/soundbar/q700a-black-hw-q700a-ru/" class="btn btn-link btn-link-underline">Көбірек білу</a>
                 </div>
             </div>
             <div class="popup-itemCard">
                 <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/jetone.png" alt="generalItem2">
                 <div class="bold popup-itemCard-name">BESPOKE Jet One, <br> шаңсорғышы</div>
                 <div class="popup-itemCard-model">VS20A95973B/EV</div>
-                <div class="popup-itemCard-color"><b>Цвет</b>: темно-синий</div>
+                <div class="popup-itemCard-color"><b>Түс</b>: қара көк</div>
                 <button class="color-wrapper">
                 <div class="color-inner color-darkblue"></div>
               </button>
                 <div class="popup-itemCard-price">549 990 ₸</div>
                 <div class="buttons buttons-column">
                     <button data-id="RB38A7B62AP/WT" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-                    <a href="https://www.samsung.com/kz_kz/vacuum-cleaners/stick/vs9500al-vc-with-all-in-one-clean-station-blue-vs20a95973b-ev/" class="btn btn-link btn-link-underline">Узнать больше</a>
+                    <a href="https://www.samsung.com/kz_kz/vacuum-cleaners/stick/vs9500al-vc-with-all-in-one-clean-station-blue-vs20a95973b-ev/" class="btn btn-link btn-link-underline">Көбірек білу</a>
                 </div>
             </div>
         </div>
@@ -379,7 +382,7 @@ recomendationBtns.forEach((rec) => {
                 <div class="popup-itemCard-price">5 499 990 ₸</div>
                 <div class="buttons buttons-column">
                     <button data-id="QE85QN900AUXCE" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-                    <a href="https://www.samsung.com/kz_kz/tvs/qled-tv/qn900a-85-inch-neo-qled-8k-smart-tv-qe85qn900auxce/" class="btn btn-link btn-link-underline">Узнать больше</a>
+                    <a href="https://www.samsung.com/kz_kz/tvs/qled-tv/qn900a-85-inch-neo-qled-8k-smart-tv-qe85qn900auxce/" class="btn btn-link btn-link-underline">Көбірек білу</a>
                 </div>
             </div>
             <div class="popup-itemCard">
@@ -389,21 +392,21 @@ recomendationBtns.forEach((rec) => {
                 <div class="popup-itemCard-price">259 990 ₸</div>
                 <div class="buttons buttons-column">
                     <button data-id="HW-Q700A/RU" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-                    <a href="https://www.samsung.com/kz_kz/audio-devices/soundbar/q700a-black-hw-q700a-ru/" class="btn btn-link btn-link-underline">Узнать больше</a>
+                    <a href="https://www.samsung.com/kz_kz/audio-devices/soundbar/q700a-black-hw-q700a-ru/" class="btn btn-link btn-link-underline">Көбірек білу</a>
                 </div>
             </div>
             <div class="popup-itemCard">
                 <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/jetone.png" alt="generalItem2">
                 <div class="bold popup-itemCard-name">BESPOKE Jet One, <br> шаңсорғышы</div>
                 <div class="popup-itemCard-model">VS20A95973B/EV</div>
-                <div class="popup-itemCard-color"><b>Цвет</b>: темно-синий</div>
+                <div class="popup-itemCard-color"><b>Түс</b>: қара көк</div>
                 <button class="color-wrapper">
                 <div class="color-inner color-darkblue"></div>
               </button>
                 <div class="popup-itemCard-price">549 990 ₸</div>
                 <div class="buttons buttons-column">
                     <button data-id="RB38A7B62AP/WT" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-                    <a href="https://www.samsung.com/kz_kz/vacuum-cleaners/stick/vs9500al-vc-with-all-in-one-clean-station-blue-vs20a95973b-ev/" class="btn btn-link btn-link-underline">Узнать больше</a>
+                    <a href="https://www.samsung.com/kz_kz/vacuum-cleaners/stick/vs9500al-vc-with-all-in-one-clean-station-blue-vs20a95973b-ev/" class="btn btn-link btn-link-underline">Көбірек білу</a>
                 </div>
             </div>
         </div>
@@ -411,6 +414,7 @@ recomendationBtns.forEach((rec) => {
               `;
       } else if (data === "kitchen") {
         overlay.classList.remove("none");
+        document.body.style.overflow = 'hidden'
         popup.innerHTML = `
         <div class="desktop">
         <span>
@@ -446,42 +450,42 @@ recomendationBtns.forEach((rec) => {
             <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/oven.png" alt="fridge">
             <div class="bold popup-itemCard-name">Тұмшапеш</div>
             <div class="popup-itemCard-model">NV75R5641RB/WT</div>
-            <div class="popup-itemCard-color"><b>Цвет</b>: чёрный</div>
+            <div class="popup-itemCard-color"><b>Түс</b>: қара</div>
             <button class="color-wrapper">
               <div class="color-inner color-black"></div>
             </button>
             <div class="popup-itemCard-price">499 990 ₸</div>
             <div class="buttons buttons-column">
                 <button data-id="NV75R5641RB/WT" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-                <a href="https://www.samsung.com/kz_kz/cooking-appliances/ovens/electric-oven-nv75r5641rb-wt/" class="btn btn-link btn-link-underline">Узнать больше</a>
+                <a href="https://www.samsung.com/kz_kz/cooking-appliances/ovens/electric-oven-nv75r5641rb-wt/" class="btn btn-link btn-link-underline">Көбірек білу</a>
             </div>
         </div>
         <div class="popup-itemCard">
             <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/microwave.png" alt="generalItem2">
             <div class="bold popup-itemCard-name">Микротолқынды пеш</div>
             <div class="popup-itemCard-model">VS20A95973B/EV</div>
-            <div class="popup-itemCard-color"><b>Цвет</b>: мята</div>
+            <div class="popup-itemCard-color"><b>Түс</b>: жалбыз</div>
             <button class="color-wrapper">
               <div class="color-inner color-myta"></div>
             </button>
             <div class="popup-itemCard-price">99 990 ₸</div>
             <div class="buttons buttons-column">
                 <button data-id="VS20A95973B/EV" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-                <a href="https://www.samsung.com/kz_kz/vacuum-cleaners/stick/vs9500al-vc-with-all-in-one-clean-station-blue-vs20a95973b-ev/" class="btn btn-link btn-link-underline">Узнать больше</a>
+                <a href="https://www.samsung.com/kz_kz/vacuum-cleaners/stick/vs9500al-vc-with-all-in-one-clean-station-blue-vs20a95973b-ev/" class="btn btn-link btn-link-underline">Көбірек білу</a>
             </div>
         </div>
         <div class="popup-itemCard">
             <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/fridge2.png" alt="generalItem2">
             <div class="bold popup-itemCard-name">Bespoke тоңазытқышы</div>
             <div class="popup-itemCard-model">RZ32T7435AP/WT</div>
-            <div class="popup-itemCard-color"><b>Цвет</b>: Белый</div>
+            <div class="popup-itemCard-color"><b>Түс</b>: ақ</div>
             <button class="color-wrapper">
               <div class="color-inner color-white"></div>
             </button>
             <div class="popup-itemCard-price">544 990 ₸</div>
             <div class="buttons buttons-column">
                 <button data-id="RZ32T7435AP/WT" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-                <a href="https://www.samsung.com/kz_kz/refrigerators/one-door/323l-white-rz32t7435ap-wt/" class="btn btn-link btn-link-underline">Узнать больше</a>
+                <a href="https://www.samsung.com/kz_kz/refrigerators/one-door/323l-white-rz32t7435ap-wt/" class="btn btn-link btn-link-underline">Көбірек білу</a>
             </div>
         </div>
       </div>
@@ -506,42 +510,42 @@ recomendationBtns.forEach((rec) => {
         <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/oven.png" alt="fridge">
         <div class="bold popup-itemCard-name">Тұмшапеш</div>
         <div class="popup-itemCard-model">NV75R5641RB/WT</div>
-        <div class="popup-itemCard-color"><b>Цвет</b>: чёрный</div>
+        <div class="popup-itemCard-color"><b>Түс</b>: қара</div>
         <button class="color-wrapper">
           <div class="color-inner color-black"></div>
         </button>
         <div class="popup-itemCard-price">499 990 ₸</div>
         <div class="buttons buttons-column">
             <button data-id="NV75R5641RB/WT" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-            <a href="https://www.samsung.com/kz_kz/cooking-appliances/ovens/electric-oven-nv75r5641rb-wt/" class="btn btn-link btn-link-underline">Узнать больше</a>
+            <a href="https://www.samsung.com/kz_kz/cooking-appliances/ovens/electric-oven-nv75r5641rb-wt/" class="btn btn-link btn-link-underline">Көбірек білу</a>
         </div>
     </div>
     <div class="popup-itemCard">
         <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/microwave.png" alt="generalItem2">
         <div class="bold popup-itemCard-name">Микротолқынды пеш</div>
         <div class="popup-itemCard-model">VS20A95973B/EV</div>
-        <div class="popup-itemCard-color"><b>Цвет</b>: мята</div>
+        <div class="popup-itemCard-color"><b>Түс</b>: жалбыз</div>
         <button class="color-wrapper">
           <div class="color-inner color-myta"></div>
         </button>
         <div class="popup-itemCard-price">99 990 ₸</div>
         <div class="buttons buttons-column">
             <button data-id="VS20A95973B/EV" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-            <a href="https://www.samsung.com/kz_kz/vacuum-cleaners/stick/vs9500al-vc-with-all-in-one-clean-station-blue-vs20a95973b-ev/" class="btn btn-link btn-link-underline">Узнать больше</a>
+            <a href="https://www.samsung.com/kz_kz/vacuum-cleaners/stick/vs9500al-vc-with-all-in-one-clean-station-blue-vs20a95973b-ev/" class="btn btn-link btn-link-underline">Көбірек білу</a>
         </div>
     </div>
     <div class="popup-itemCard">
         <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/fridge2.png" alt="generalItem2">
         <div class="bold popup-itemCard-name">Bespoke тоңазытқышы</div>
         <div class="popup-itemCard-model">RZ32T7435AP/WT</div>
-        <div class="popup-itemCard-color"><b>Цвет</b>: Белый</div>
+        <div class="popup-itemCard-color"><b>Түс</b>: ақ</div>
         <button class="color-wrapper">
           <div class="color-inner color-white"></div>
         </button>
         <div class="popup-itemCard-price">544 990 ₸</div>
         <div class="buttons buttons-column">
             <button data-id="RZ32T7435AP/WT" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-            <a href="https://www.samsung.com/kz_kz/refrigerators/one-door/323l-white-rz32t7435ap-wt/" class="btn btn-link btn-link-underline">Узнать больше</a>
+            <a href="https://www.samsung.com/kz_kz/refrigerators/one-door/323l-white-rz32t7435ap-wt/" class="btn btn-link btn-link-underline">Көбірек білу</a>
         </div>
     </div>
   </div>
@@ -549,6 +553,7 @@ recomendationBtns.forEach((rec) => {
               `;
       } else if (data == "kid") {
         overlay.classList.remove("none");
+        document.body.style.overflow = 'hidden'
         popup.innerHTML = `
              <div class="desktop">
              <span>
@@ -585,7 +590,7 @@ recomendationBtns.forEach((rec) => {
                  <div class="popup-itemCard-price">494 990  ₸</div>
                  <div class="buttons buttons-column">
                      <button data-id="AR12AXAAAWKNER" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-                     <a href="https://www.samsung.com/kz_kz/air-conditioners/wall-mount/ar9500t-wind-free-ar12axaaawkner/" class="btn btn-link btn-link-underline">Узнать больше</a>
+                     <a href="https://www.samsung.com/kz_kz/air-conditioners/wall-mount/ar9500t-wind-free-ar12axaaawkner/" class="btn btn-link btn-link-underline">Көбірек білу</a>
                  </div>
              </div>
              <div class="popup-itemCard">
@@ -595,7 +600,7 @@ recomendationBtns.forEach((rec) => {
                  <div class="popup-itemCard-price">209 990 ₸</div>
                  <div class="buttons buttons-column">
                      <button data-id="AX60T5080WD/ER" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-                     <a href="https://www.samsung.com/kz_kz/air-care/air-purifier/ax5500k-air-purifier-with-3-way-air-flow/" class="btn btn-link btn-link-underline">Узнать больше</a>
+                     <a href="https://www.samsung.com/kz_kz/air-care/air-purifier/ax5500k-air-purifier-with-3-way-air-flow/" class="btn btn-link btn-link-underline">Көбірек білу</a>
                  </div>
              </div>
              <div class="popup-itemCard">
@@ -605,7 +610,7 @@ recomendationBtns.forEach((rec) => {
                  <div class="popup-itemCard-price">569 990 ₸</div>
                  <div class="buttons buttons-column">
                      <button data-id="SP-LSP3BLAXCE" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-                     <a href="https://www.samsung.com/kz_kz/projectors/the-freestyle/lsp3b-the-freestyle-sp-lsp3blaxce/" class="btn btn-link btn-link-underline">Узнать больше</a>
+                     <a href="https://www.samsung.com/kz_kz/projectors/the-freestyle/lsp3b-the-freestyle-sp-lsp3blaxce/" class="btn btn-link btn-link-underline">Көбірек білу</a>
                  </div>
              </div>
          </div>
@@ -642,7 +647,7 @@ recomendationBtns.forEach((rec) => {
                  <div class="popup-itemCard-price">494 990  ₸</div>
                  <div class="buttons buttons-column">
                      <button data-id="AR12AXAAAWKNER" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-                     <a href="https://www.samsung.com/kz_kz/air-conditioners/wall-mount/ar9500t-wind-free-ar12axaaawkner/" class="btn btn-link btn-link-underline">Узнать больше</a>
+                     <a href="https://www.samsung.com/kz_kz/air-conditioners/wall-mount/ar9500t-wind-free-ar12axaaawkner/" class="btn btn-link btn-link-underline">Көбірек білу</a>
                  </div>
              </div>
              <div class="popup-itemCard">
@@ -652,7 +657,7 @@ recomendationBtns.forEach((rec) => {
                  <div class="popup-itemCard-price">209 990 ₸</div>
                  <div class="buttons buttons-column">
                      <button data-id="AX60T5080WD/ER" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-                     <a href="https://www.samsung.com/kz_kz/air-care/air-purifier/ax5500k-air-purifier-with-3-way-air-flow/" class="btn btn-link btn-link-underline">Узнать больше</a>
+                     <a href="https://www.samsung.com/kz_kz/air-care/air-purifier/ax5500k-air-purifier-with-3-way-air-flow/" class="btn btn-link btn-link-underline">Көбірек білу</a>
                  </div>
              </div>
              <div class="popup-itemCard">
@@ -662,7 +667,7 @@ recomendationBtns.forEach((rec) => {
                  <div class="popup-itemCard-price">569 990 ₸</div>
                  <div class="buttons buttons-column">
                      <button data-id="SP-LSP3BLAXCE" class="btn btn-black popup-itemCard-buy">Себетке қосу</button>
-                     <a href="https://www.samsung.com/kz_kz/projectors/the-freestyle/lsp3b-the-freestyle-sp-lsp3blaxce/" class="btn btn-link btn-link-underline">Узнать больше</a>
+                     <a href="https://www.samsung.com/kz_kz/projectors/the-freestyle/lsp3b-the-freestyle-sp-lsp3blaxce/" class="btn btn-link btn-link-underline">Көбірек білу</a>
                  </div>
              </div>
          </div>
@@ -672,7 +677,53 @@ recomendationBtns.forEach((rec) => {
     });
   });
 
-
+  packListFinal["#pack-1"] = [
+    {
+      product: "QE55QN85AAUXCE",
+      badge: false,
+      gift: {
+        title:
+          "<b>Сіздің алатыныңыз:</b><br> SoundBar (Q600A), шаңсорғыш және келесі сатып алуға 10% жеңілдікпен промокод аласыз",
+        gift_sku: "HW-Q600A/RU, VC18M21C0VR/EV",
+      },
+    },
+    { product: "AR09BSEANWKNER", badge: false, gift: false },
+  ];
+  packListFinal["#pack-2"] = [
+    {
+      product: "SM-S908BZGHSKZ",
+      badge: false,
+      gift: {
+        title: "<b>Сіздің алатыныңыз:</b><br> SoundBar (Q600A)",
+        gift_sku: "HW-Q600A/RU",
+      },
+    },
+    { product: "SP-LSP7TUAXCE", badge: false, gift: false },
+  ];
+  packListFinal["#pack-3"] = [
+    {
+      product: "QE65QN85AAUXCE",
+      badge: false,
+      gift: {
+        title:
+          "<b>Сіздің алатыныңыз:</b><br> SoundBar (Q600A), микротолқынды пеш және келесі сатып алуға 15% жеңілдікпен промокод аласыз",
+        gift_sku: "HW-Q600A/RU, ME81MRTB/BW",
+      },
+    },
+    { product: "VR50T95735W/EV", badge: false, gift: false },
+  ];
+  packListFinal["#pack-4"] = [
+    {
+      product: "QE55QN90AAUXCE",
+      badge: false,
+      gift: {
+        title:
+          "<b>Сіздің алатыныңыз:</b><br> SoundBar(Q600A) және келесі сатып алуға 10% жеңілдікпен промокод аласыз",
+        gift_sku: "HW-Q600A/RU",
+      },
+    },
+    { product: "AX60T5080WD/ER", badge: false, gift: false },
+  ];
 
 
 
@@ -1349,3 +1400,52 @@ recomendationBtns.forEach((rec) => {
       }
     });
   });
+
+
+  packListFinal["#pack-1"] = [
+    {
+      product: "QE55QN85AAUXCE",
+      badge: false,
+      gift: {
+        title:
+          "<b>Вы получаете:</b><br> SoundBar (Q600A), пылесос и  промокод 10% на след покупку ",
+        gift_sku: "HW-Q600A/RU, VC18M21C0VR/EV",
+      },
+    },
+    { product: "AR09BSEANWKNER", badge: false, gift: false },
+  ];
+  packListFinal["#pack-2"] = [
+    {
+      product: "SM-S908BZGHSKZ",
+      badge: false,
+      gift: {
+        title: "<b>Вы получаете:</b><br> SoundBar (Q600A)",
+        gift_sku: "HW-Q600A/RU",
+      },
+    },
+    { product: "SP-LSP7TUAXCE", badge: false, gift: false },
+  ];
+  packListFinal["#pack-3"] = [
+    {
+      product: "QE65QN85AAUXCE",
+      badge: false,
+      gift: {
+        title:
+          "<b>Вы получаете:</b><br> SoundBar (Q600A), микроволновую печь  и промокод 15% на след покупку",
+        gift_sku: "HW-Q600A/RU, ME81MRTB/BW",
+      },
+    },
+    { product: "VR50T95735W/EV", badge: false, gift: false },
+  ];
+  packListFinal["#pack-4"] = [
+    {
+      product: "QE55QN90AAUXCE",
+      badge: false,
+      gift: {
+        title:
+          "<b>Вы получаете:</b><br> SoundBar (Q600A) и  промокод 10% на след покупку ",
+        gift_sku: "HW-Q600A/RU",
+      },
+    },
+    { product: "AX60T5080WD/ER", badge: false, gift: false },
+  ];

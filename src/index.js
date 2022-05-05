@@ -12,6 +12,7 @@ recomendationBtns.forEach((rec) => {
     let data = e.target.dataset.rec;
     if (data == "general1") {
       overlay.classList.remove("none");
+      document.body.style.overflow = 'hidden'
     //   document.body.style.overflow = "hidden"
       popup.innerHTML = `
       <div class="desktop">
@@ -29,7 +30,7 @@ recomendationBtns.forEach((rec) => {
   <div class="popup-wrapper">
       <div>
           <img class="popup-img" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/generalP2.png" alt="">
-          <p>В целом, важно создать несколько мест, где каждый член семьи сможет отвлечься от суеты, расслабиться в компании с приятной книгой или просто созерцая вид за окном. Такие места дают ощущение своего личного пространства, создавая неповторимую энергию дома.</p>
+          <p>В целом, важно создать несколько мест, где каждый член семьи сможет отвлечься от суеты, расслабиться в компании с приятной книгой или просто созерцая вид за окном. Такие места дают ощущение своего личного пространства, создавая неповторимую энергию дома. А воплотить в жизнь смелые интерьерные решения после продуманного ремонта поможет техника Samsung.</p>
       </div>
       <div>
           <p class="popup-text_small popup-text_small-2">
@@ -109,7 +110,7 @@ recomendationBtns.forEach((rec) => {
     </p>
     </div>
     <p class="popup-text-1mob">Для создания интимной атмосферы можно использовать элементы, косвенно или прямо отражающие энергию огня. Например, паровой камин. Он выглядит как настоящий, даёт тёплый воздух и дарит невероятное ощущение уюта.</p>
-    <p class="bold text-left">В целом, важно создать несколько мест, где каждый член семьи сможет отвлечься от суеты, расслабиться в компании с приятной книгой или просто созерцая вид за окном. Такие места дают ощущение своего личного пространства, создавая неповторимую энергию дома.</p>
+    <p class="bold text-left">В целом, важно создать несколько мест, где каждый член семьи сможет отвлечься от суеты, расслабиться в компании с приятной книгой или просто созерцая вид за окном. Такие места дают ощущение своего личного пространства, создавая неповторимую энергию дома. А воплотить в жизнь смелые интерьерные решения после продуманного ремонта поможет техника Samsung.</p>
 </div>
 <h4 class="popup-header">Подборка подходящей техники Samsung</h4>
 <div class="popup-wrapper popup-wrapper-nogap">
@@ -160,6 +161,7 @@ recomendationBtns.forEach((rec) => {
             `;
     } else if (data == "general2") {
       overlay.classList.remove("none");
+      document.body.style.overflow = 'hidden'
       popup.innerHTML = `
       <div class="desktop">
             <span>
@@ -185,7 +187,7 @@ recomendationBtns.forEach((rec) => {
                 <img class="popup-img popup-img-22" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/general22.png" alt="">
             </div>
             <div>
-                <p class="popup-text popup-text_small-23">Пространство для жизни должно быть максимально комфортным для вас, без оглядки на тренды или рекомендации инфлюенсеров.</p>
+                <p class="popup-text popup-text_small-23">Пространство для жизни должно быть максимально комфортным для вас, без оглядки на тренды или рекомендации инфлюенсеров. А устройства Samsung созданы для воплощения в жизнь любых интерьерных решений.</p>
             </div>
         </div>
         <img class="popup-img popup-img-23" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/general23.png" alt="">
@@ -255,7 +257,7 @@ recomendationBtns.forEach((rec) => {
         </p>
       </div>
   <img class="popup-img" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/general23.png" alt="">
-  <p class="popup-text bold">Пространство для жизни должно быть максимально комфортным для вас, без оглядки на тренды или рекомендации инфлюенсеров.</p>
+  <p class="popup-text bold">Пространство для жизни должно быть максимально комфортным для вас, без оглядки на тренды или рекомендации инфлюенсеров. А устройства Samsung созданы для воплощения в жизнь любых интерьерных решений.</p>
   <h4 class="popup-header">Подборка подходящей техники Samsung</h4>
   <div class="popup-wrapper popup-wrapper-nogap">
       <div class="popup-itemCard">
@@ -305,13 +307,14 @@ recomendationBtns.forEach((rec) => {
              `;
     } else if (data == "living") {
       overlay.classList.remove("none");
+      document.body.style.overflow = 'hidden'
       popup.innerHTML = `
       <div class="desktop"> 
       <span>
         <img class="popup-close" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/close.png" alt="">
       </span>
       <h4 class="popup-header">Гостиная</h4>
-      <div class="popup-wrapper popup-wrapper-lwrap">
+      <div class="popup-wrapper">
         <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/lroom1.png" alt="">
         <div>
           <p class="bold">Яркость гостиной с тёмно-серыми стенами и светлым полом можно добавить за счёт акцентов: терракотовых штор и дивана.</p>
@@ -419,6 +422,7 @@ recomendationBtns.forEach((rec) => {
     </div>
             `;
     } else if (data === "kitchen") {
+      document.body.style.overflow = 'hidden'
       overlay.classList.remove("none");
       popup.innerHTML = `
       <div class="desktop">
@@ -558,6 +562,7 @@ recomendationBtns.forEach((rec) => {
             `;
     } else if (data == "kid") {
       overlay.classList.remove("none");
+      document.body.style.overflow = 'hidden'
       popup.innerHTML = `
            <div class="desktop">
            <span>
@@ -684,6 +689,7 @@ recomendationBtns.forEach((rec) => {
 popup.addEventListener("click", (e) => {
   if (e.target.className == "popup-close") {
     overlay.classList.add("none");
+    document.body.style.overflow = 'auto'
   }
   if (e.target.className == "btn btn-black popup-itemCard-buy") {
     console.log( e.target.dataset.id)
