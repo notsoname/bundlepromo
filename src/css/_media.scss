@@ -88,7 +88,7 @@
   }
   .designer{
     &-card {
-      background-image: url('../assets/designMob.png');
+      background-image: url('https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/designMob.png');
       width: vw(312, $unitPxVw);
       height: vw(451, $unitPxVw);
       display: flex;
@@ -120,6 +120,10 @@
         gap: unset;
         align-items: center;
       }
+      &-nowrap {
+        margin-top: vw(16, $unitPxVw);
+        flex-wrap: unset;
+      }
     }
     &-wrapper2 {
       gap: unset;
@@ -140,13 +144,20 @@
       &-1 {
         margin-left: vw(16, $unitPxVw);
       }
+      &-l1mob {
+        margin-bottom: vw(16, $unitPxVw);
+      }
       &-1mob {
         margin-left: vw(48, $unitPxVw);
+      }
+      &-l3mob {
+        margin-left: vw(8, $unitPxVw);
+        width: vw(129, $unitPxVw);
       }
       &_small {
         &-2 {
           position: absolute;
-          top: vw(-201, $unitPxVw);
+          top: vw(-180, $unitPxVw);
           left: vw(160, $unitPxVw);
           margin-top: 0 !important;
           width: vw(120, $unitPxVw);
@@ -156,7 +167,7 @@
           width: unset;
         }
         &-22 {
-          margin-left: 0;
+          margin-left: vw(16, $unitPxVw);
         }
         &-43 {
           margin-left: vw(24, $unitPxVw);
@@ -171,6 +182,12 @@
       }
     }
     &-img {
+      &-l2mob {
+        margin-left: vw(22, $unitPxVw);
+      }
+      &-l3mob {
+        width: 150px;
+      }
       &-2 {
         width: vw(148, $unitPxVw);
         margin-top: vw(8, $unitPxVw);
@@ -182,7 +199,7 @@
         position: unset;
         top: 0;
         left: 0;
-        width: vw(200, $unitPxVw);
+        width: vw(135, $unitPxVw);
       }
       &-42 {
         position: unset;

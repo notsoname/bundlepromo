@@ -5,14 +5,13 @@ require("./js/polyfills");
 
 const recomendationBtns = document.querySelectorAll(".recomendation");
 const popup = document.querySelector(".popup");
+const overlay = document.querySelector('.popup-overlay')
 const popupClose = document.querySelector(".popup-close");
 recomendationBtns.forEach((rec) => {
   rec.addEventListener("click", (e) => {
-    popup.classList.remove("invisible");
-    popup.classList.add("visible");
     let data = e.target.dataset.rec;
     if (data == "general1") {
-      popup.classList.remove("none");
+      overlay.classList.remove("none");
     //   document.body.style.overflow = "hidden"
       popup.innerHTML = `
       <div class="desktop">
@@ -92,7 +91,7 @@ recomendationBtns.forEach((rec) => {
     <img class="popup-close" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/close.png" alt="">
 </span>
 <h4 class="popup-header1">Зонирование в интерьере</h4>
-<div class="popup-wrapper popup-wrapper2">
+<div class="popup-wrapper">
     <div>
         <p class="bold popup-text-1">Часто возникает желание создать светлое, спокойное и гармоничное пространство, в котором можно расслабиться после рабочего дня. При этом в доме должны быть места для хранения вещей, а также для работы. В таких случаях дизайнер рекомендует делить пространство на приватную (жилую) и общественную зоны.</p>
     </div>
@@ -101,8 +100,8 @@ recomendationBtns.forEach((rec) => {
 </div>
 <div class="popup-wrapper">
     <div class="popup-parent">
-        <img class="popup-img" src="../assets/generalP2mob.png" alt="">
-        <img class="popup-img popup-img-2" src="../assets/generalP3mob.png" alt="">
+        <img class="popup-img" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/generalP2mob.png" alt="">
+        <img class="popup-img popup-img-2" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/generalP3mob.png" alt="">
     </div>
     <div class="popup-wrapper popup-parent">
       <p class="popup-text_small popup-text_small-2">
@@ -160,7 +159,7 @@ recomendationBtns.forEach((rec) => {
     </div>
             `;
     } else if (data == "general2") {
-      popup.classList.remove("none");
+      overlay.classList.remove("none");
       popup.innerHTML = `
       <div class="desktop">
             <span>
@@ -250,7 +249,7 @@ recomendationBtns.forEach((rec) => {
           <p class="popup-text_small popup-text_small-21">Хобби, любовь к музыкальному направлению или яркий вкус в одежде могут стать основанием выбора нейтрального основного цвета с добавлением ярких и нестандартных цветов. Причём ключевой цвет можно показать в разных плоскостях и формах: на кухонных фасадах, в обивке мебели, в декоре. Таким образом у пространства появится не только объединяющий элемент, но и ощущение причастности к создателю.</p>
       </div>
       <div class="popup-wrapper popup-wrapper2">
-        <img class="popup-img popup-img-22" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/general22.png" alt="">
+        <img class="popup-img popup-img-22" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/general22mobb.png" alt="">
         <p class="popup-text_small popup-text_small-22">
             Существуют интерьерные решения, в которых ванная комната отделяется от спальни полностью стеклянной перегородкой. Благодаря этому свет проникает в ванную. Кроме того, такой подход отражает яркую и свободную составляющую в характере владельца. При желании перегородку можно закрыть шторой, но суть остаётся прежней.
         </p>
@@ -305,52 +304,122 @@ recomendationBtns.forEach((rec) => {
       </div>
              `;
     } else if (data == "living") {
-      popup.classList.remove("none");
+      overlay.classList.remove("none");
       popup.innerHTML = `
-            <span>
-            <img class="popup-close" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/close.png" alt="">
-        </span>
-        <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/living2.png" alt="">
-        <h4 class="popup-header">Подборка подходящей техники Samsung</h4>
-        <div class="popup-wrapper">
-            <div class="popup-itemCard">
-                <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/tv.png" alt="fridge">
-                <div class="bold popup-itemCard-name">Neo QLED 8K Smart TV <br> (2021) 85"</div>
-                <div class="popup-itemCard-model">QE85QN900AUXCE</div>
-                <div class="popup-itemCard-price">5 499 990 ₸</div>
-                <div class="buttons buttons-column">
-                    <button data-id="QE85QN900AUXCE" class="btn btn-black popup-itemCard-buy">Добавить в корзину</button>
-                    <a href="https://www.samsung.com/kz_ru/tvs/qled-tv/qn900a-85-inch-neo-qled-8k-smart-tv-qe85qn900auxce/" class="btn btn-link btn-link-underline">Узнать больше</a>
-                </div>
-            </div>
-            <div class="popup-itemCard">
-                <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/soundbar.png" alt="generalItem2">
-                <div class="bold popup-itemCard-name">3.1.2ch саундбар <br> (2021)</div>
-                <div class="popup-itemCard-model">HW-Q700A/RU</div>
-                <div class="popup-itemCard-price">259 990 ₸</div>
-                <div class="buttons buttons-column">
-                    <button data-id="HW-Q700A/RU" class="btn btn-black popup-itemCard-buy">Добавить в корзину</button>
-                    <a href="https://www.samsung.com/kz_ru/audio-devices/soundbar/q700a-black-hw-q700a-ru/" class="btn btn-link btn-link-underline">Узнать больше</a>
-                </div>
-            </div>
-            <div class="popup-itemCard">
-                <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/jetone.png" alt="generalItem2">
-                <div class="bold popup-itemCard-name">BESPOKE Jet One, <br> Беспроводной пылесос</div>
-                <div class="popup-itemCard-model">VS20A95973B/EV</div>
-                <div class="popup-itemCard-color"><b>Цвет</b>: темно-синий</div>
-                <button class="color-wrapper">
-                <div class="color-inner color-darkblue"></div>
-              </button>
-                <div class="popup-itemCard-price">549 990 ₸</div>
-                <div class="buttons buttons-column">
-                    <button data-id="RB38A7B62AP/WT" class="btn btn-black popup-itemCard-buy">Добавить в корзину</button>
-                    <a href="https://www.samsung.com/kz_ru/vacuum-cleaners/stick/vs9500al-vc-with-all-in-one-clean-station-blue-vs20a95973b-ev/" class="btn btn-link btn-link-underline">Узнать больше</a>
-                </div>
-            </div>
+      <div class="desktop"> 
+      <span>
+        <img class="popup-close" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/close.png" alt="">
+      </span>
+      <h4 class="popup-header">Гостиная</h4>
+      <div class="popup-wrapper popup-wrapper-lwrap">
+        <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/lroom1.png" alt="">
+        <div>
+          <p class="bold">Яркость гостиной с тёмно-серыми стенами и светлым полом можно добавить за счёт акцентов: терракотовых штор и дивана.</p>
+          <p class="popup-text_small">Если же захотелось создать спокойную базу для атмосферы отдыха и расслабленности, можно сделать абсолютно нейтральный интерьер, в который при желании легко добавлять акценты. </p>
         </div>
+      </div>
+      <p class="popup-text_small popup-text-l1">Для создания светлого и воздушного пространства отлично подойдут окна в пол, выход на террасу и минимум мебели. Светло-бежевые стены контрастируют с полом, покрытым тёмным маслом, что визуально расширяет помещение. Можно продумать и сделать стенку на заказ, заодно подстроив её под размеры телевизора Samsung. Разместите кресло возле эркера, чтобы любоваться садом и низкий диван, чтобы наблюдать за тем, что происходит в комнате и смотреть телевизор.</p>
+      <img class="popup-img-l2" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/lroom2.png" alt="">
+      <div class="popup-lroomWrapper">
+        <img class="popup-img-l3" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/lroom3.png" alt="">
+        <p class="popup-text_small popup-text-l3">Добавьте в интерьер элементы от стиля джапанди, например, два светильника из рисовой бумаги. Нейтральные цвета для воздуха и открытые окна, чтобы свет заполнял пространство. В эркере поставьте зелень в горшках, чтобы природа стала частью стиля.</p>
+      </div>
+      <h4 class="popup-header">Подборка подходящей техники Samsung</h4>
+      <div class="popup-wrapper">
+          <div class="popup-itemCard">
+              <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/tv.png" alt="fridge">
+              <div class="bold popup-itemCard-name">Neo QLED 8K Smart TV <br> (2021) 85"</div>
+              <div class="popup-itemCard-model">QE85QN900AUXCE</div>
+              <div class="popup-itemCard-price">5 499 990 ₸</div>
+              <div class="buttons buttons-column">
+                  <button data-id="QE85QN900AUXCE" class="btn btn-black popup-itemCard-buy">Добавить в корзину</button>
+                  <a href="https://www.samsung.com/kz_ru/tvs/qled-tv/qn900a-85-inch-neo-qled-8k-smart-tv-qe85qn900auxce/" class="btn btn-link btn-link-underline">Узнать больше</a>
+              </div>
+          </div>
+          <div class="popup-itemCard">
+              <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/soundbar.png" alt="generalItem2">
+              <div class="bold popup-itemCard-name">3.1.2ch саундбар <br> (2021)</div>
+              <div class="popup-itemCard-model">HW-Q700A/RU</div>
+              <div class="popup-itemCard-price">259 990 ₸</div>
+              <div class="buttons buttons-column">
+                  <button data-id="HW-Q700A/RU" class="btn btn-black popup-itemCard-buy">Добавить в корзину</button>
+                  <a href="https://www.samsung.com/kz_ru/audio-devices/soundbar/q700a-black-hw-q700a-ru/" class="btn btn-link btn-link-underline">Узнать больше</a>
+              </div>
+          </div>
+          <div class="popup-itemCard">
+              <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/jetone.png" alt="generalItem2">
+              <div class="bold popup-itemCard-name">BESPOKE Jet One, <br> Беспроводной пылесос</div>
+              <div class="popup-itemCard-model">VS20A95973B/EV</div>
+              <div class="popup-itemCard-color"><b>Цвет</b>: темно-синий</div>
+              <button class="color-wrapper">
+              <div class="color-inner color-darkblue"></div>
+            </button>
+              <div class="popup-itemCard-price">549 990 ₸</div>
+              <div class="buttons buttons-column">
+                  <button data-id="RB38A7B62AP/WT" class="btn btn-black popup-itemCard-buy">Добавить в корзину</button>
+                  <a href="https://www.samsung.com/kz_ru/vacuum-cleaners/stick/vs9500al-vc-with-all-in-one-clean-station-blue-vs20a95973b-ev/" class="btn btn-link btn-link-underline">Узнать больше</a>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="mobile">
+      <span>
+        <img class="popup-close" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/close.png" alt="">
+      </span>
+      <h4 class="popup-header">Гостиная</h4>
+      <p class="bold popup-text-l1mob">
+        Яркость гостиной с тёмно-серыми стенами и светлым полом можно добавить за счёт акцентов: терракотовых штор и дивана.
+      </p>
+      <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/lroom1mob.png" alt="">
+      <p class="popup-text_small">Если же захотелось создать спокойную базу для атмосферы отдыха и расслабленности, можно сделать абсолютно нейтральный интерьер, в который при желании легко добавлять акценты. </p>
+      <img class="popup-img-l2mob" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/lroom2mob.png" alt="">
+      <p class="popup-text_small">Для создания светлого и воздушного пространства отлично подойдут окна в пол, выход на террасу и минимум мебели. Светло-бежевые стены контрастируют с полом, покрытым тёмным маслом, что визуально расширяет помещение. Можно продумать и сделать стенку на заказ, заодно подстроив её под размеры телевизора Samsung. Разместите кресло возле эркера, чтобы любоваться садом и низкий диван, чтобы наблюдать за тем, что происходит в комнате и смотреть телевизор.</p>
+      <div class="popup-wrapper popup-wrapper-nowrap">
+        <img class="popup-img-l3mob" src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/lroom3mob.png" alt="">
+        <p class="popup-text_small popup-text-l3mob">Добавьте в интерьер элементы от стиля джапанди, например, два светильника из рисовой бумаги. Нейтральные цвета для воздуха и открытые окна, чтобы свет заполнял пространство. В эркере поставьте зелень в горшках, чтобы природа стала частью стиля.</p>
+      </div>
+      <h4 class="popup-header">Подборка подходящей техники Samsung</h4>
+      <div class="popup-wrapper popup-wrapper-nogap">
+          <div class="popup-itemCard">
+              <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/tv.png" alt="fridge">
+              <div class="bold popup-itemCard-name">Neo QLED 8K Smart TV <br> (2021) 85"</div>
+              <div class="popup-itemCard-model">QE85QN900AUXCE</div>
+              <div class="popup-itemCard-price">5 499 990 ₸</div>
+              <div class="buttons buttons-column">
+                  <button data-id="QE85QN900AUXCE" class="btn btn-black popup-itemCard-buy">Добавить в корзину</button>
+                  <a href="https://www.samsung.com/kz_ru/tvs/qled-tv/qn900a-85-inch-neo-qled-8k-smart-tv-qe85qn900auxce/" class="btn btn-link btn-link-underline">Узнать больше</a>
+              </div>
+          </div>
+          <div class="popup-itemCard">
+              <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/soundbar.png" alt="generalItem2">
+              <div class="bold popup-itemCard-name">3.1.2ch саундбар <br> (2021)</div>
+              <div class="popup-itemCard-model">HW-Q700A/RU</div>
+              <div class="popup-itemCard-price">259 990 ₸</div>
+              <div class="buttons buttons-column">
+                  <button data-id="HW-Q700A/RU" class="btn btn-black popup-itemCard-buy">Добавить в корзину</button>
+                  <a href="https://www.samsung.com/kz_ru/audio-devices/soundbar/q700a-black-hw-q700a-ru/" class="btn btn-link btn-link-underline">Узнать больше</a>
+              </div>
+          </div>
+          <div class="popup-itemCard">
+              <img src="https://images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo/jetone.png" alt="generalItem2">
+              <div class="bold popup-itemCard-name">BESPOKE Jet One, <br> Беспроводной пылесос</div>
+              <div class="popup-itemCard-model">VS20A95973B/EV</div>
+              <div class="popup-itemCard-color"><b>Цвет</b>: темно-синий</div>
+              <button class="color-wrapper">
+              <div class="color-inner color-darkblue"></div>
+            </button>
+              <div class="popup-itemCard-price">549 990 ₸</div>
+              <div class="buttons buttons-column">
+                  <button data-id="RB38A7B62AP/WT" class="btn btn-black popup-itemCard-buy">Добавить в корзину</button>
+                  <a href="https://www.samsung.com/kz_ru/vacuum-cleaners/stick/vs9500al-vc-with-all-in-one-clean-station-blue-vs20a95973b-ev/" class="btn btn-link btn-link-underline">Узнать больше</a>
+              </div>
+          </div>
+      </div>
+    </div>
             `;
     } else if (data === "kitchen") {
-      popup.classList.remove("none");
+      overlay.classList.remove("none");
       popup.innerHTML = `
       <div class="desktop">
       <span>
@@ -488,7 +557,7 @@ recomendationBtns.forEach((rec) => {
 </div>
             `;
     } else if (data == "kid") {
-      popup.classList.remove("none");
+      overlay.classList.remove("none");
       popup.innerHTML = `
            <div class="desktop">
            <span>
@@ -614,9 +683,7 @@ recomendationBtns.forEach((rec) => {
 
 popup.addEventListener("click", (e) => {
   if (e.target.className == "popup-close") {
-    popup.classList.add("invisible");
-    popup.classList.remove("visible");
-    popup.classList.add("none");
+    overlay.classList.add("none");
   }
   if (e.target.className == "btn btn-black popup-itemCard-buy") {
     console.log( e.target.dataset.id)
@@ -3096,7 +3163,7 @@ packListFinal["#pack-1"] = [
 ];
 packListFinal["#pack-2"] = [
   {
-    product: "SM-S908BZKDSKZ",
+    product: "SM-S908BZGHSKZ",
     badge: false,
     gift: {
       title: "<b>Вы получаете:</b><br> SoundBar (Q600A)",

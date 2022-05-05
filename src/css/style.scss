@@ -1278,6 +1278,25 @@ body {
     transition: 0.5s all
   }
   .popup {
+    &-overlay {
+      overflow: auto;
+      position: fixed; /* Sit on top of the page content */
+      width: 100%; /* Full width (cover the whole page) */
+      height: 100%; /* Full height (cover the whole page) */
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+      z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+      display: flex;
+      justify-content: center;
+    }
+    &-header {
+      &-2 {
+        margin-top: 12px !important;
+      }
+    }
     transition: 0.3s all;
     position: absolute;
     width: 920px !important;
@@ -1286,6 +1305,11 @@ body {
     padding: 24px;
     border-radius: 20px;
     z-index: 2000;
+    &-lroomWrapper {
+      position: absolute;
+      top: 250px;
+      left: 473px;
+    }
     &-close {
       cursor: pointer;
       position: absolute;
@@ -1302,14 +1326,26 @@ body {
       &-43 {
         margin-top: 100px;
       }
+      &-lwrap {
+        margin-top: 14px;
+      }
     }
     &-text {
+      &-l1 {
+        margin-left: 16px;
+        margin-top: 24px;
+        width: 426px;
+      }
+      &-l3 {
+        margin-left: 16px;
+      }
       &-1 {
         margin-top: 16px !important;
         max-width: 400px;
       }
       &-4 {
         width: 306px;
+        margin-top: 14px !important;
       }
       &_small {
         font-size: 12px;
@@ -1349,6 +1385,14 @@ body {
     &-img {
       width: 100%;
       max-width: unset;
+      &-l2 {
+        margin-top: 24px;
+        margin-left: 100px;
+        width: 330px;
+      }
+      &-l3 {
+        width: 447px;
+      }
       &-2 {
         margin-top: 30px;
       }
