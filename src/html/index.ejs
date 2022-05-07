@@ -205,7 +205,7 @@ const _youtube = require('./_youtube.ejs');
               </div>
               </div>
         </section>
-        <section class="section section-solution">
+        <section class="section section-solution" id="bundle">
             <div class="wrapper wrapper-center">
               <div class="col col-10">
                 <div class="text-wrap text-center">
@@ -216,9 +216,11 @@ const _youtube = require('./_youtube.ejs');
               <div class="col col-3" >
                 <div class="text-wrap text-center">
                   <div class="solution-card">
-                    <img src="<%= imageRoot %>/bundle11.png" alt="" />
+                    <img src="<%= imageRoot %>/bundle111.png" alt="" />
                     <div class="solution-textWrapper">
                       <p class="solution-header"><%- t("solutionBundle1Header") %></h3>
+                      <p class="solution-price2"><%- t("solutionBundle1price") %></p>
+                      <span class="devider"></span>
                       <p class="solution-price"><%- t("solutionBundle1Text") %></p>
                     </div>
                     <div class="buttons buttons-column solution-buttons">
@@ -234,9 +236,11 @@ const _youtube = require('./_youtube.ejs');
               <div class="col col-3" >
                 <div class="text-wrap text-center">
                   <div class="solution-card">
-                    <img src="<%= imageRoot %>/bundle2.png" alt="" />
+                    <img src="<%= imageRoot %>/bundle22.png" alt="" />
                     <div class="solution-textWrapper">
                       <p class="solution-header"><%- t("solutionBundle2Header") %></h3>
+                        <p class="solution-price2"><%- t("solutionBundle2price") %></p>
+                        <span class="devider"></span>
                       <p class="solution-price"><%- t("solutionBundle2Text") %></p>
                     </div>
                     <div class="buttons buttons-column solution-buttons">
@@ -252,9 +256,11 @@ const _youtube = require('./_youtube.ejs');
               <div class="col col-3" >
                 <div class="text-wrap text-center">
                   <div class="solution-card">
-                    <img src="<%= imageRoot %>/bundle3.png" alt="" />
+                    <img src="<%= imageRoot %>/bundle33.png" alt="" />
                     <div class="solution-textWrapper">
                       <p class="solution-header"><%- t("solutionBundle3Header") %></h3>
+                        <p class="solution-price2"><%- t("solutionBundle3price") %></p>
+                        <span class="devider"></span>
                       <p class="solution-price"><%- t("solutionBundle3Text") %></p>
                     </div>
                     <div class="buttons buttons-column solution-buttons">
@@ -270,9 +276,11 @@ const _youtube = require('./_youtube.ejs');
               <div class="col col-3" >
                 <div class="text-wrap text-center">
                   <div class="solution-card">
-                    <img src="<%= imageRoot %>/bundle4.png" alt="" />
+                    <img src="<%= imageRoot %>/bundle44.png" alt="" />
                     <div class="solution-textWrapper">
                       <p class="solution-header"><%- t("solutionBundle4Header") %></h3>
+                        <p class="solution-price2"><%- t("solutionBundle4price") %></p>
+                        <span class="devider"></span>
                       <p class="solution-price"><%- t("solutionBundle4Text") %></p>
                     </div>
                     <div class="buttons buttons-column solution-buttons">
@@ -280,6 +288,46 @@ const _youtube = require('./_youtube.ejs');
                         data-omni-base="<%- omniBase %>" 
                         data-omni="<%- omniBase %>:buy:bundle3"
                         href="#pack-4" class="btn cta cta--contained cta--black open-pack"><%- t("solutionBuy") %></a>
+                      </div>
+                    <h5 class="solution-date"><%- t("solutionDate") %></h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-3" >
+                <div class="text-wrap text-center">
+                  <div class="solution-card">
+                    <img src="<%= imageRoot %>/bundle5.png" alt="" />
+                    <div class="solution-textWrapper">
+                      <p class="solution-header"><%- t("solutionBundle5Header") %></h3>
+                        <p class="solution-price2"><%- t("solutionBundle5price") %></p>
+                        <span class="devider"></span>
+                      <p class="solution-price"><%- t("solutionBundle5Text") %></p>
+                    </div>
+                    <div class="buttons buttons-column solution-buttons">
+                        <a 
+                        data-omni-base="<%- omniBase %>" 
+                        data-omni="<%- omniBase %>:buy:bundle3"
+                        href="#pack-5" class="btn cta cta--contained cta--black open-pack"><%- t("solutionBuy") %></a>
+                      </div>
+                    <h5 class="solution-date"><%- t("solutionDate") %></h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-3" >
+                <div class="text-wrap text-center">
+                  <div class="solution-card">
+                    <img src="<%= imageRoot %>/bundle6.png" alt="" />
+                    <div class="solution-textWrapper">
+                      <p class="solution-header"><%- t("solutionBundle6Header") %></h3>
+                        <p class="solution-price2"><%- t("solutionBundle6price") %></p>
+                        <span class="devider"></span>
+                      <p class="solution-price"><%- t("solutionBundle6Text") %></p>
+                    </div>
+                    <div class="buttons buttons-column solution-buttons">
+                        <a 
+                        data-omni-base="<%- omniBase %>" 
+                        data-omni="<%- omniBase %>:buy:bundle3"
+                        href="#pack-6" class="btn cta cta--contained cta--black open-pack"><%- t("solutionBuy") %></a>
                       </div>
                     <h5 class="solution-date"><%- t("solutionDate") %></h3>
                   </div>
@@ -377,6 +425,75 @@ const _youtube = require('./_youtube.ejs');
                               </div>
                           </div>
                           <div class="section products bundles" id="pack-4" data-pack="4" style="display:none;">
+                              <div class="innerWrap">
+                                  <div class="products-list bundle-products-list">
+                                      <div class="spinner" style="text-align: center; position: relative; height: 48px; width: 100%; display: block;">
+                                          <div id="fountainG">
+                                              <div id="fountainG_1" class="fountainG"></div>
+                                              <div id="fountainG_2" class="fountainG"></div>
+                                              <div id="fountainG_3" class="fountainG"></div>
+                                              <div id="fountainG_4" class="fountainG"></div>
+                                              <div id="fountainG_5" class="fountainG"></div>
+                                              <div id="fountainG_6" class="fountainG"></div>
+                                              <div id="fountainG_7" class="fountainG"></div>
+                                              <div id="fountainG_8" class="fountainG"></div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="bundles-summary">
+                                      <div class="s-wrap">
+                                          <a href="javascript:void(0);" class="cta cta--black cta--contained cta-buy-bundle cta--disabled" data-omni-type="microsite" data-omni="kz_ru:offer:ecosystempromo:buy pack-1"><%- t("bundleOrder") %></a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="section products bundles" id="pack-5" data-pack="5" style="display:none;">
+                              <div class="innerWrap">
+                                  <div class="products-list bundle-products-list">
+                                      <div class="spinner" style="text-align: center; position: relative; height: 48px; width: 100%; display: block;">
+                                          <div id="fountainG">
+                                              <div id="fountainG_1" class="fountainG"></div>
+                                              <div id="fountainG_2" class="fountainG"></div>
+                                              <div id="fountainG_3" class="fountainG"></div>
+                                              <div id="fountainG_4" class="fountainG"></div>
+                                              <div id="fountainG_5" class="fountainG"></div>
+                                              <div id="fountainG_6" class="fountainG"></div>
+                                              <div id="fountainG_7" class="fountainG"></div>
+                                              <div id="fountainG_8" class="fountainG"></div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="bundles-summary">
+                                      <div class="s-wrap">
+                                          <a href="javascript:void(0);" class="cta cta--black cta--contained cta-buy-bundle cta--disabled" data-omni-type="microsite" data-omni="kz_ru:offer:ecosystempromo:buy pack-1"><%- t("bundleOrder") %></a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="section products bundles" id="pack-6" data-pack="6" style="display:none;">
+                              <div class="innerWrap">
+                                  <div class="products-list bundle-products-list">
+                                      <div class="spinner" style="text-align: center; position: relative; height: 48px; width: 100%; display: block;">
+                                          <div id="fountainG">
+                                              <div id="fountainG_1" class="fountainG"></div>
+                                              <div id="fountainG_2" class="fountainG"></div>
+                                              <div id="fountainG_3" class="fountainG"></div>
+                                              <div id="fountainG_4" class="fountainG"></div>
+                                              <div id="fountainG_5" class="fountainG"></div>
+                                              <div id="fountainG_6" class="fountainG"></div>
+                                              <div id="fountainG_7" class="fountainG"></div>
+                                              <div id="fountainG_8" class="fountainG"></div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="bundles-summary">
+                                      <div class="s-wrap">
+                                          <a href="javascript:void(0);" class="cta cta--black cta--contained cta-buy-bundle cta--disabled" data-omni-type="microsite" data-omni="kz_ru:offer:ecosystempromo:buy pack-1"><%- t("bundleOrder") %></a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="section products bundles" id="pack-7" data-pack="7" style="display:none;">
                               <div class="innerWrap">
                                   <div class="products-list bundle-products-list">
                                       <div class="spinner" style="text-align: center; position: relative; height: 48px; width: 100%; display: block;">

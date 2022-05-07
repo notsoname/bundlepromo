@@ -1196,8 +1196,13 @@ body {
       padding: 0 32px;
     }
     &-price {
-      margin-top: 36px;
+      // margin-top: 36px;
       font-size: 22px;
+    }
+    &-price2 {
+      margin-top: 16px;
+      font-size: 12px;
+      margin-bottom: 8px;
     }
     &-date {
       font-size: 14px;
@@ -1504,6 +1509,15 @@ body {
         line-height: 29px;
       }
     }
+  }
+
+
+  .devider {
+    width: 142px;
+    height: 1px;
+    background-color: #707070;
+    display: block;
+    margin: 0 auto;
   }
 
   @import 'index';
