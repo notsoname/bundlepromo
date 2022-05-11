@@ -3209,7 +3209,7 @@ packListFinal["#pack-5"] = [
     gift: {
       title:
         "<b>Вы получаете:</b><br> Arbuz 20000 и  Промокод 2 по 15% на след покупку ",
-      gift_sku: "VS15A6031R5/EV, SM-R190 ",
+      gift_sku: "",
     },
   },
   { product: "RS61R5001F8/WT", badge: false, gift: false },
@@ -3220,8 +3220,8 @@ packListFinal["#pack-6"] = [
     badge: false,
     gift: {
       title:
-        "<b>Вы получаете:</b><br> Turbo (VS15A6031R5/EV or VS15A6031R4/EV) и Galaxy Buds Pro (SM-R190)",
-      gift_sku: "HW-Q600A/RU",
+        "<b>Вы получаете:</b><br> Turbo и Galaxy Buds Pro",
+      gift_sku: "VS15A6031R4/EV, SM-R190",
     },
   },
   { product: "SM-G990BLGDSKZ", badge: false, gift: false },
