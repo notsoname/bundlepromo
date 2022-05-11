@@ -1,13 +1,13 @@
 {
   "appId" : "april-bundle-promo",
-  "location" : "/{locale}/offer/april-bundle-promo",
+  "location" : "/{locale}/offer/may-bundle-promo",
   "baseUrl" : "./",
   "analyseBundle" : false,
   "port" : 8084,
   "pages" : [
     {
       "appId" : "april-bundle-promo",
-      "location" : "kz_ru/offer/april-bundle-promo/"
+      "location" : "kz_ru/offer/may-bundle-promo/"
     }
   ],
   "routesMap" : {
@@ -16,7 +16,7 @@
       "root": "",
       "contentRoot": "//images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo",
       "imageRoot": "//images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo",
-      "omniBase" :  "{locale}:offer:april-bundle-promo",
+      "omniBase" :  "{locale}:offer:may-bundle-promo",
       "baseUrl" : "//api.sece.kz/"
     },
     "test": {
@@ -24,7 +24,7 @@
       "root": "./",
       "contentRoot": "",
       "imageRoot": "//images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo",
-      "omniBase" :  "{locale}:offer:april-bundle-promo",
+      "omniBase" :  "{locale}:offer:may-bundle-promo",
       "baseUrl" : "//api.sece.kz/"
     },
     "production": {
@@ -32,7 +32,7 @@
       "root": "./",
       "contentRoot": "//images.samsung.com/is/content/samsung/assets/kz_ru/offer/april-bundle-promo",
       "imageRoot": "//images.samsung.com/is/image/samsung/assets/kz_ru/offer/april-bundle-promo",
-      "omniBase" :  "{locale}:offer:april-bundle-promo",
+      "omniBase" :  "{locale}:offer:may-bundle-promo",
       "baseUrl" :  "//api.sece.kz/"
     }
   }

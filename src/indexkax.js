@@ -724,6 +724,30 @@ recomendationBtns.forEach((rec) => {
     },
     { product: "AX60T5080WD/ER", badge: false, gift: false },
   ];
+  packListFinal["#pack-5"] = [
+    {
+      product: "NV68R5540CB/WT",
+      badge: false,
+      gift: {
+        title:
+          "<b>Сіздің алатыныңыз:</b><br> Arbuz-дан сертификат пен келесі сатып алуға 15% жеңілдік промокод",
+        gift_sku: "",
+      },
+    },
+    { product: "RS61R5001F8/WT", badge: false, gift: false },
+  ];
+  packListFinal["#pack-6"] = [
+    {
+      product: "QE43LS03AAUXCE",
+      badge: false,
+      gift: {
+        title:
+          "<b>Сіздің алатыныңыз:</b><br> JET 60 Turbo сымсыз шаңсорғышын және Galaxy Buds Pro",
+        gift_sku: "VS15A6031R4/EV, SM-R190",
+      },
+    },
+    { product: "SM-G990BLGDSKZ", badge: false, gift: false },
+  ];
 
 
 
@@ -1401,7 +1425,7 @@ recomendationBtns.forEach((rec) => {
     });
   });
 
-
+  let packListFinal = [];
   packListFinal["#pack-1"] = [
     {
       product: "QE55QN85AAUXCE",
@@ -1439,7 +1463,7 @@ recomendationBtns.forEach((rec) => {
   ];
   packListFinal["#pack-4"] = [
     {
-      product: "QE55QN90AAUXCE",
+      product: "QE55QN85AAUXCE",
       badge: false,
       gift: {
         title:
@@ -1448,4 +1472,28 @@ recomendationBtns.forEach((rec) => {
       },
     },
     { product: "AX60T5080WD/ER", badge: false, gift: false },
+  ];
+  packListFinal["#pack-5"] = [
+    {
+      product: "NV68R5540CB/WT",
+      badge: false,
+      gift: {
+        title:
+          "<b>Вы получаете:</b><br> Cертификат от Arbuzи промокод 15% на следующую покупку. ",
+        gift_sku: "",
+      },
+    },
+    { product: "RS61R5001F8/WT", badge: false, gift: false },
+  ];
+  packListFinal["#pack-6"] = [
+    {
+      product: "QE43LS03AAUXCE",
+      badge: false,
+      gift: {
+        title:
+          "<b>Вы получаете:</b><br> Jet 60 Turbo и наушники Galaxy Buds Pro.",
+        gift_sku: "VS15A6031R4/EV, SM-R190",
+      },
+    },
+    { product: "SM-G990BLGDSKZ", badge: false, gift: false },
   ];
