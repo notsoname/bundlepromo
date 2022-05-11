@@ -3208,7 +3208,7 @@ packListFinal["#pack-5"] = [
     badge: false,
     gift: {
       title:
-        "<b>Вы получаете:</b><br> Arbuz 20000 и  Промокод 2 по 15% на след покупку ",
+        "<b>Вы получаете:</b><br> Cертификат от Arbuzи промокод 15% на следующую покупку. ",
       gift_sku: "",
     },
   },
@@ -3220,7 +3220,7 @@ packListFinal["#pack-6"] = [
     badge: false,
     gift: {
       title:
-        "<b>Вы получаете:</b><br> Turbo и Galaxy Buds Pro",
+        "<b>Вы получаете:</b><br> Jet 60 Turbo и наушники Galaxy Buds Pro.",
       gift_sku: "VS15A6031R4/EV, SM-R190",
     },
   },
