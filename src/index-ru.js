@@ -3310,6 +3310,46 @@ packListFinal["#pack-13"] = [
     product: "AR12BSFCMWKNER", badge: false, gift: false 
   }
 ];
+packListFinal["#pack-14"] = [
+  { product: "RF44A5002S9/WT", 
+    badge: false,
+    gift: {
+      title:
+        "<b>Вы получаете:</b><br>  2 промокода на следующие покупки и сертификат от Arbuz.",
+      gift_sku: "SM-R190",
+    },
+   },
+  {
+    product: "NZ63F3NM1AB/WT", badge: false, gift: false 
+  },
+];
+packListFinal["#pack-15"] = [
+  { product: "SM-G990BLVDSKZ", 
+    badge: false,
+    gift: {
+      title:
+        "<b>Вы получаете:</b><br> пылесос, наушники Galaxy Buds Pro и промокод 15% на следующую покупку",
+      gift_sku: "SM-R190,  VC18M21C0VR/EV",
+    },
+   },
+  {
+    product: "AR12BSFAMWKNER", badge: false, gift: false 
+  },
+];
+packListFinal["#pack-16"] = [
+  { product: "LF24G33TFWIXCI", 
+    badge: false,
+    gift: {
+      title:
+        "<b>Вы получаете:</b><br> наушники Galaxy Buds Pro",
+      gift_sku: "SM-R190",
+    },
+   },
+  {
+    product: "SM-G990BZAGSKZ", badge: false, gift: false 
+  },
+];
+
 
 let bundleCriteria = {
   pack1: 2,

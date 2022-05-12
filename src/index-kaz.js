@@ -3316,6 +3316,45 @@ packListFinal["#pack-13"] = [
     product: "AR12BSFCMWKNER", badge: false, gift: false 
   }
 ];
+packListFinal["#pack-14"] = [
+  { product: "RF44A5002S9/WT", 
+    badge: false,
+    gift: {
+      title:
+        "<b>Сіздің алатыныңыз:</b><br> келесі жолы тауар сатып алуға арналған 2 промокод пен Arbuz ұсынған сертификат",
+      gift_sku: "SM-R190",
+    },
+   },
+  {
+    product: "NZ63F3NM1AB/WT", badge: false, gift: false 
+  },
+];
+packListFinal["#pack-15"] = [
+  { product: "SM-G990BLVDSKZ", 
+    badge: false,
+    gift: {
+      title:
+        "<b>Сіздің алатыныңыз:</b><br> шаңсорғыш, Galaxy Buds Pro құлаққаптарын және келесі жолы тауар сатып алуға -15% промокод ",
+      gift_sku: "SM-R190,  VC18M21C0VR/EV",
+    },
+   },
+  {
+    product: "AR12BSFAMWKNER", badge: false, gift: false 
+  },
+];
+packListFinal["#pack-16"] = [
+  { product: "LF24G33TFWIXCI", 
+    badge: false,
+    gift: {
+      title:
+        "<b>Сіздің алатыныңыз:</b><br> Galaxy Buds Pro құлаққаптарын",
+      gift_sku: "SM-R190",
+    },
+   },
+  {
+    product: "SM-G990BZAGSKZ", badge: false, gift: false 
+  },
+];
 
 let bundleCriteria = {
   pack1: 2,
@@ -3330,7 +3369,7 @@ let bundleCriteria = {
   pack10: 3,
   pack11: 2,
   pack12: 2,
-  pack13: 3,
+  pack13: 2,
   // pack6: 2
 };
 

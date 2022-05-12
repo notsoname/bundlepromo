@@ -771,7 +771,7 @@ recomendationBtns.forEach((rec) => {
       badge: false,
       gift: {
         title:
-          "<b>Вы получаете:</b><br> жақтауға жеңілдік пен келесі жолы тауар сатып алуға -15% промокод",
+          "<b>Сіздің алатыныңыз:</b><br> жақтауға жеңілдік пен келесі жолы тауар сатып алуға -15% промокод",
         gift_sku: "",
       },
      },
@@ -813,7 +813,7 @@ recomendationBtns.forEach((rec) => {
       badge: false,
       gift: {
         title:
-          "<b>Вы получаете:</b><br> жақтауға жеңілдік пен келесі жолы тауар сатып алуға -10% промокод",
+          "<b>Сіздің алатыныңыз:</b><br> жақтауға жеңілдік пен келесі жолы тауар сатып алуға -10% промокод",
         gift_sku: "",
       },
      },
@@ -826,7 +826,7 @@ recomendationBtns.forEach((rec) => {
       badge: false,
       gift: {
         title:
-          "<b>Вы получаете:</b><br> Galaxy Buds Pro, шаңсорғыш пен келесі жолы тауар сатып алуға -10% промокод",
+          "<b>Сіздің алатыныңыз:</b><br> Galaxy Buds Pro, шаңсорғыш пен келесі жолы тауар сатып алуға -10% промокод",
         gift_sku: "SM-R190",
       },
      },
@@ -837,7 +837,45 @@ recomendationBtns.forEach((rec) => {
       product: "AR12BSFCMWKNER", badge: false, gift: false 
     }
   ];
-
+  packListFinal["#pack-14"] = [
+    { product: "RF5000A", 
+      badge: false,
+      gift: {
+        title:
+          "<b>Сіздің алатыныңыз:</b><br> келесі жолы тауар сатып алуға арналған 2 промокод пен Arbuz ұсынған сертификат",
+        gift_sku: "SM-R190",
+      },
+     },
+    {
+      product: "NZF300G", badge: false, gift: false 
+    },
+  ];
+  packListFinal["#pack-15"] = [
+    { product: "SM-G990BLVDSKZ", 
+      badge: false,
+      gift: {
+        title:
+          "<b>Сіздің алатыныңыз:</b><br> шаңсорғыш, Galaxy Buds Pro құлаққаптарын және келесі жолы тауар сатып алуға -15% промокод ",
+        gift_sku: "SM-R190,  VC18M21C0VR/EV",
+      },
+     },
+    {
+      product: "AR12BSFAMWKNER", badge: false, gift: false 
+    },
+  ];
+  packListFinal["#pack-16"] = [
+    { product: "LF24G33TFWIXCI", 
+      badge: false,
+      gift: {
+        title:
+          "<b>Сіздің алатыныңыз:</b><br> Galaxy Buds Pro құлаққаптарын",
+        gift_sku: "SM-R190",
+      },
+     },
+    {
+      product: "SM-G990B", badge: false, gift: false 
+    },
+  ];
 
 
   recomendationBtns.forEach((rec) => {
@@ -1674,4 +1712,43 @@ recomendationBtns.forEach((rec) => {
     {
       product: "AR12BSFCMWKNER", badge: false, gift: false 
     }
+  ];
+  packListFinal["#pack-14"] = [
+    { product: "RF5000A", 
+      badge: false,
+      gift: {
+        title:
+          "<b>Вы получаете:</b><br>  2 промокода на следующие покупки и сертификат от Arbuz.",
+        gift_sku: "SM-R190",
+      },
+     },
+    {
+      product: "NZF300G", badge: false, gift: false 
+    },
+  ];
+  packListFinal["#pack-15"] = [
+    { product: "SM-G990BLVDSKZ", 
+      badge: false,
+      gift: {
+        title:
+          "<b>Вы получаете:</b><br> пылесос, наушники Galaxy Buds Pro и промокод 15% на следующую покупку",
+        gift_sku: "SM-R190,  VC18M21C0VR/EV",
+      },
+     },
+    {
+      product: "AR12BSFAMWKNER", badge: false, gift: false 
+    },
+  ];
+  packListFinal["#pack-16"] = [
+    { product: "LF24G33TFWIXCI", 
+      badge: false,
+      gift: {
+        title:
+          "<b>Вы получаете:</b><br> наушники Galaxy Buds Pro",
+        gift_sku: "SM-R190",
+      },
+     },
+    {
+      product: "SM-G990B", badge: false, gift: false 
+    },
   ];
