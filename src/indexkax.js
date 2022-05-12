@@ -1310,7 +1310,7 @@ recomendationBtns.forEach((rec) => {
          <h4 class="popup-header">Детская</h4>
          <div class="popup-wrapper">
              <div>
-                 <p class="bold popup-text-1">Интерьер детской может быть частью общего стиля дома. При этом безусловно важно прислушаться к пожеланиям самого юнного хозяина комнаты. </p>
+                 <p class="bold popup-text-1">Интерьер детской может быть частью общего стиля дома. При этом безусловно важно прислушаться к пожеланиям самого юного хозяина комнаты. </p>
                  <p class="popup-text_small popup-text_small-1">Основные цвета в детской можно сделать довольно сдержанными, чтобы она росла вместе с ребёнком. Цветные игрушки станут акцентами и зададут настроение комнате. По мере взросления игрушки можно убрать, и спальня станет аскетичной. В узких комнатах добавьте зеркало для увеличения объёма, а перед телевизором Samsung разместите лежачий подиум, на котором ребёнок будет играть с друзьями или просто с комфортом смотреть мультфильмы.</p>
              </div>
              <div>
@@ -1496,4 +1496,93 @@ recomendationBtns.forEach((rec) => {
       },
     },
     { product: "SM-G990BLGDSKZ", badge: false, gift: false },
+  ];
+  packListFinal["#pack-8"] = [
+    { product: "SM-S908BDRDSKZ", 
+      badge: false,
+      gift: {
+        title:
+          "<b>Вы получаете:</b><br> смартфон Galaxy A33, скидку на рамку, промокоды -10% и 100 000 тг на следующие покупки",
+        gift_sku: "SM-A336",
+      },
+     },
+    {
+      product: "VR30T85513W/EV",
+      badge: false,
+      gift: false 
+    },
+    { product: "QE32LS03TBKXCE", badge: false, 
+    gift: false 
+  },
+  ];
+  packListFinal["#pack-9"] = [
+    { product: "QE50LS03AAUXCE", 
+      badge: false,
+      gift: {
+        title:
+          "<b>Вы получаете:</b><br> скидку на рамку и промокод -15% на следующую покупку",
+        gift_sku: "",
+      },
+     },
+    {
+      product: "VS20A95973B/EV", badge: false, gift: false 
+    },
+  ];
+  packListFinal["#pack-10"] = [
+    { product: "LS27A800NMIXCI", 
+      badge: false,
+      gift: {
+        title:
+          "<b>Вы получаете:</b><br> Galaxy A33, пылесос и промокоды -10% и 100000 тг на следующие покупки.",
+        gift_sku: "SM-A336, VC18M21C0VR/EV",
+      },
+     },
+    {
+      product: "SM-S908BDRDSKZ", badge: false, gift: false 
+    },
+    {
+      product: "AR12BSFCMWKNER", badge: false, gift: false 
+    }
+  ];
+  packListFinal["#pack-11"] = [
+    { product: "AR12BSFCMWKNER", 
+      badge: false,
+      gift: {
+        title:
+          "<b>Вы получаете:</b><br> пылесос и промокод -10% на следующую покупку",
+        gift_sku: "VC18M21C0VR/EV",
+      },
+     },
+    {
+      product: "SM-A336BZKGSKZ", badge: false, gift: false 
+    }
+  ];
+  packListFinal["#pack-12"] = [
+    { product: "QE50LS03AAUXCE", 
+      badge: false,
+      gift: {
+        title:
+          "<b>Вы получаете:</b><br> скидку на рамку и промокод -10% на следующую покупку.",
+        gift_sku: "",
+      },
+     },
+    {
+      product: "AX60T5080WD/ER", badge: false, gift: false 
+    }
+  ];
+  packListFinal["#pack-13"] = [
+    { product: "QE43LS05TAUXRU", 
+      badge: false,
+      gift: {
+        title:
+          "<b>Вы получаете:</b><br> наушники Galaxy Buds Pro, пылесос и промокод -10% на следующую покупку",
+        gift_sku: "SM-R190",
+      },
+     },
+    {
+      product: "SM-G990BLGGSKZ", badge: false, gift: false 
+    },
+    {
+      product: "AR12BSFCMWKNER", badge: false, gift: false 
+    }
   ];
