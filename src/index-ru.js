@@ -2256,7 +2256,7 @@ let SeceProductList = {
   productsList: false,
   productsListContainer: $(".products-list .swiper-wrapper"),
   allowedChips: ["TV SIZE", "COLOR", "MOBILE MEMORY"],
-  omniVar: "kz_ru:offer:may-bundle-promo:",
+  omniVar: "kz_ru:offer:ecosystempromo:main:",
   productCombos: [],
   giftsParsed: [],
   giftInStock: [],
@@ -3335,7 +3335,7 @@ let SeceBundleList = {
   productsReadyPartial: [],
   productsList: false,
   allowedChips: ["TV SIZE", "COLOR", "MOBILE MEMORY"],
-  omniVar: "kz_ru:offer:may-bundle-promo:",
+  omniVar: "kz_ru:offer:ecosystem:main:",
   productCombos: [],
   init: function () {
     var _this = this;

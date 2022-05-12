@@ -748,6 +748,95 @@ recomendationBtns.forEach((rec) => {
     },
     { product: "SM-G990BLGDSKZ", badge: false, gift: false },
   ];
+  packListFinal["#pack-8"] = [
+    { product: "SM-S908BDRDSKZ", 
+      badge: false,
+      gift: {
+        title:
+          "<b>Сіздің алатыныңыз:</b><br> Galaxy A33, жақтауға жеңілдік, келесі жолы тауар сатып алуға -10% және 100 000 тг промокодтар",
+        gift_sku: "SM-A336",
+      },
+     },
+    {
+      product: "VR30T85513W/EV",
+      badge: false,
+      gift: false 
+    },
+    { product: "QE32LS03TBKXCE", badge: false, 
+    gift: false 
+  },
+  ];
+  packListFinal["#pack-9"] = [
+    { product: "QE50LS03AAUXCE", 
+      badge: false,
+      gift: {
+        title:
+          "<b>Вы получаете:</b><br> жақтауға жеңілдік пен келесі жолы тауар сатып алуға -15% промокод",
+        gift_sku: "",
+      },
+     },
+    {
+      product: "VS20A95973B/EV", badge: false, gift: false 
+    },
+  ];
+  packListFinal["#pack-10"] = [
+    { product: "LS27A800NMIXCI", 
+      badge: false,
+      gift: {
+        title:
+          "<b>Вы получаете:</b><br> Galaxy A33, шаңсорғыш және келесі жолы тауар сатып алуға -10% бен 100000 тг промокодтар",
+        gift_sku: "SM-A336, VC18M21C0VR/EV",
+      },
+     },
+    {
+      product: "SM-S908BDRDSKZ", badge: false, gift: false 
+    },
+    {
+      product: "AR12BSFCMWKNER", badge: false, gift: false 
+    }
+  ];
+  packListFinal["#pack-11"] = [
+    { product: "AR12BSFCMWKNER", 
+      badge: false,
+      gift: {
+        title:
+          "<b>Вы получаете:</b><br> шаңсорғыш пен келесі жолы тауар сатып алуға -10% промокод",
+        gift_sku: "VC18M21C0VR/EV",
+      },
+     },
+    {
+      product: "SM-A336BZKGSKZ", badge: false, gift: false 
+    }
+  ];
+  packListFinal["#pack-12"] = [
+    { product: "QE50LS03AAUXCE", 
+      badge: false,
+      gift: {
+        title:
+          "<b>Вы получаете:</b><br> жақтауға жеңілдік пен келесі жолы тауар сатып алуға -10% промокод",
+        gift_sku: "",
+      },
+     },
+    {
+      product: "AX60T5080WD/ER", badge: false, gift: false 
+    }
+  ];
+  packListFinal["#pack-13"] = [
+    { product: "QE43LS05TAUXRU", 
+      badge: false,
+      gift: {
+        title:
+          "<b>Вы получаете:</b><br> Galaxy Buds Pro, шаңсорғыш пен келесі жолы тауар сатып алуға -10% промокод",
+        gift_sku: "SM-R190",
+      },
+     },
+    {
+      product: "SM-G990BLGGSKZ", badge: false, gift: false 
+    },
+    {
+      product: "AR12BSFCMWKNER", badge: false, gift: false 
+    }
+  ];
 
 
 
