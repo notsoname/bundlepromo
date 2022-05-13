@@ -1520,6 +1520,31 @@ body {
     margin: 0 auto;
   }
 
+  .bundle {
+    &-pop {
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 1999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-content {
+      width: 920px;
+      background-color: #fff;
+      min-height: 200px;
+      border-radius: 20px;
+      padding: 24px;
+    }
+  }
+
+
   @import 'index';
   @import 'media';
   @import 'main_mob';

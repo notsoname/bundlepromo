@@ -56,18 +56,14 @@ const createBundleProduct = async (sku) => {
     productCard = `
     <div>${parentData.parentName}</div>
     <div>${parentData.options[0].optionList[i].optionName}</div>
-    `
-  }
-  let bundleCard = `
-    <div class="bundle-card">
-      <div class="bundle-card-name">${parentData.parentName}</div>
-      <div>${parentData.options[0].optionList[].optionName}</div>
-    </div>
   `
-  // for (let i = 0;i<parentData.options[0].optionList.length; i++) {
-  //   bundleSizes.insertAdjacentHTML('beforeend', `<button>${parentData.options[0].optionList[i].optionName}</button>`)
-  // }
-  bundleContent.insertAdjacentHTML('beforeend', bundleCard)
+  }
+  let sizes = parentData.options[0].optionList.forEach(sizes => {
+    console.log(sizes.optionName)
+  })
+  for (let i = 0;i<parentData.options[0].optionList.length; i++) {
+    bundleSizes.insertAdjacentHTML('beforeend', `<button>${parentData.options[0].optionList[i].optionName}</button>`)
+  }
 }
 createBundleProduct()
 

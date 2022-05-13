@@ -69,7 +69,7 @@ module.exports = (env, argv) => {
 
   const conf = {
     mode: argv.mode,
-    entry: "./src/index.js",
+    entry: ["regenerator-runtime/runtime.js","./src/index.js"],
     output: {
       path: path.resolve(__dirname, "web"),
       filename: "bundle.js?[chunkhash:6]",
