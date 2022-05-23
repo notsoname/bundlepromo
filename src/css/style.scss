@@ -329,7 +329,7 @@ body {
     }
     .btn,
     .button {
-      margin: 0 8px;
+      // margin: 0 8px;
       display: inline-flex;
       align-items: center;
       padding-top: 8px;
@@ -1082,7 +1082,7 @@ body {
       }
     }
   }
-
+  
   .input-selector {
     display: flex;
     flex-flow: row wrap;
@@ -1129,14 +1129,14 @@ body {
       height: 1289px;
       z-index: 0;
       display: block;
-      margin-top: 44px;
+      // margin-top: 44px;
     }
     &-solution {
-      padding-top: 64px;
+      // padding-top: 64px;
       // z-index: 10000 !important;
     }
     &-connect {
-      padding-bottom: 179px;
+      // padding-bottom: 179px;
     }
     &-connect_mob {
       display: none;
@@ -1149,6 +1149,12 @@ body {
     z-index: 1000 !important;
   }
   .share {
+    &-select {
+      margin-right: 8px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
     &-card {
       min-height: 375px;
       min-width: 330px; 
@@ -1191,6 +1197,9 @@ body {
       justify-content: space-between;
       border-radius: 16px;
       padding-bottom: 36px;
+      &_wrapper {
+        padding: 24px;
+      }
     }
     &-btns {
       padding: 0 32px;

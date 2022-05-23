@@ -57,8 +57,22 @@
   }
   .solution {
     &-card {
+      justify-content: unset;
       width: vw(312, $unitPxVw);
-      height: vw(654, $unitPxVw);
+      // height: vw(654, $unitPxVw);
+      height: unset;
+      img {
+        width: vw(312, $unitPxVw);
+      }
+      &-wrapper {
+        padding: vw(24, $unitPxVw);
+      }
+    }
+    &-header {
+      font-size: vw(12, $unitPxVw)
+    }
+    &-price {
+      font-size: vw(14, $unitPxVw)
     }
     &-btns {
       padding: vw(24, $unitPxVw);
