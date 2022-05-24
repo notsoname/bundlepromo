@@ -53,30 +53,41 @@
     &-card {
       width: vw(312, $unitPxVw);
       min-height: vw(312, $unitPxVw);
+      border-radius: vw(20, $unitPxVw);
+      min-width: unset;
     }
   }
   .solution {
     &-card {
       justify-content: unset;
       width: vw(312, $unitPxVw);
-      // height: vw(654, $unitPxVw);
+      min-height: unset;
       height: unset;
+      border-radius: vw(16, $unitPxVw);
+      padding-bottom: unset;
       img {
         width: vw(312, $unitPxVw);
       }
-      &-wrapper {
+      &_wrapper {
         padding: vw(24, $unitPxVw);
       }
     }
     &-header {
-      font-size: vw(12, $unitPxVw)
+      font-size: vw(12, $unitPxVw);
     }
     &-price {
-      font-size: vw(14, $unitPxVw)
+      font-size: vw(14, $unitPxVw);
+    }
+    &-price2 {
+      font-size: vw(12, $unitPxVw);
+      margin-top: vw(48, $unitPxVw);
     }
     &-btns {
       padding: vw(24, $unitPxVw);
     }
+  }
+  .divider {
+    width: vw(142, $unitPxVw);
   }
   .communication {
     &-card {
@@ -241,8 +252,11 @@
       &-color {
         font-size: vw(12, $unitPxVw);
       }
-      &price {
+      &-price {
         font-size: vw(18, $unitPxVw);
+      }
+      &-price2 {
+        font-size: vw(12, $unitPxVw);
       }
     }
   }
